@@ -1,0 +1,192 @@
+\doxysection{play\+Cards\+::Card Class Reference}
+\hypertarget{classplay_cards_1_1_card}{}\label{classplay_cards_1_1_card}\index{playCards::Card@{playCards::Card}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classplay_cards_1_1_card_a12e638cd12117a1a1ecbe08c1e8bfe49}\label{classplay_cards_1_1_card_a12e638cd12117a1a1ecbe08c1e8bfe49} 
+enum class {\bfseries suits} \{ {\bfseries diamonds}
+, {\bfseries hears}
+, {\bfseries clubs}
+, {\bfseries spades}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classplay_cards_1_1_card_a2f81874380f80363faddd0b4c982a64f}\label{classplay_cards_1_1_card_a2f81874380f80363faddd0b4c982a64f} 
+{\bfseries Card} (int rank, suits suit1)
+\item 
+int \mbox{\hyperlink{classplay_cards_1_1_card_ae7ef7dae832a6c33f7121009d681dda4}{get\+Rank}} () const
+\item 
+suits \mbox{\hyperlink{classplay_cards_1_1_card_af9fc70900615d436bb511728e78fc2db}{get\+Suit}} () const
+\item 
+\mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \& \mbox{\hyperlink{classplay_cards_1_1_card_a2434fc936856a66a73cd1125d59f03cf}{set\+Rank}} (int rank)
+\item 
+\mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \& \mbox{\hyperlink{classplay_cards_1_1_card_afde77cb7bf36577148694f73fc785af4}{set\+Suit}} (suits n\+Suit)
+\item 
+std\+::string \mbox{\hyperlink{classplay_cards_1_1_card_af805f908f8ecc29e463fe90738ff93a5}{format\+String}} () const
+\item 
+std\+::strong\+\_\+ordering \mbox{\hyperlink{classplay_cards_1_1_card_ae9667b7ef1869bb0da1f1c22eb258ce9}{operator$<$=$>$}} (const \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \&second\+Card) const
+\item 
+bool \mbox{\hyperlink{classplay_cards_1_1_card_a2c0714c351bd7f2b552920c1b4569d74}{operator==}} (const \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \&rhs) const
+\item 
+\mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \mbox{\hyperlink{classplay_cards_1_1_card_a64c58c89e145b03f6e782fa90f045515}{operator!}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classplay_cards_1_1_card_a23997dfb05faf22154c84ff78569be7c}{operator$<$$<$}} (std\+::ostream \&out\+Stream, const \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \&card)
+\item 
+std\+::istream \& \mbox{\hyperlink{classplay_cards_1_1_card_a8a9c1fcb74d64c5613dc92ccf196cb74}{operator$>$$>$}} (std\+::istream \&in\+Stream, \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \&card)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classplay_cards_1_1_card_af805f908f8ecc29e463fe90738ff93a5}\label{classplay_cards_1_1_card_af805f908f8ecc29e463fe90738ff93a5} 
+\index{playCards::Card@{playCards::Card}!formatString@{formatString}}
+\index{formatString@{formatString}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{formatString()}{formatString()}}
+{\footnotesize\ttfamily std\+::string play\+Cards\+::\+Card\+::format\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+card as a beautiful string 
+\end{DoxyReturn}
+\Hypertarget{classplay_cards_1_1_card_ae7ef7dae832a6c33f7121009d681dda4}\label{classplay_cards_1_1_card_ae7ef7dae832a6c33f7121009d681dda4} 
+\index{playCards::Card@{playCards::Card}!getRank@{getRank}}
+\index{getRank@{getRank}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{getRank()}{getRank()}}
+{\footnotesize\ttfamily int play\+Cards\+::\+Card\+::get\+Rank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+rank of this card 
+\end{DoxyReturn}
+\Hypertarget{classplay_cards_1_1_card_af9fc70900615d436bb511728e78fc2db}\label{classplay_cards_1_1_card_af9fc70900615d436bb511728e78fc2db} 
+\index{playCards::Card@{playCards::Card}!getSuit@{getSuit}}
+\index{getSuit@{getSuit}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{getSuit()}{getSuit()}}
+{\footnotesize\ttfamily suits play\+Cards\+::\+Card\+::get\+Suit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+suit of this card 
+\end{DoxyReturn}
+\Hypertarget{classplay_cards_1_1_card_a64c58c89e145b03f6e782fa90f045515}\label{classplay_cards_1_1_card_a64c58c89e145b03f6e782fa90f045515} 
+\index{playCards::Card@{playCards::Card}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} play\+Cards\+::\+Card\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+diametrically opposite card for suit 1 is 4, for suit 2 is 3, for rank is (16 -\/ rank) 
+\end{DoxyReturn}
+\Hypertarget{classplay_cards_1_1_card_ae9667b7ef1869bb0da1f1c22eb258ce9}\label{classplay_cards_1_1_card_ae9667b7ef1869bb0da1f1c22eb258ce9} 
+\index{playCards::Card@{playCards::Card}!operator$<$=$>$@{operator$<$=$>$}}
+\index{operator$<$=$>$@{operator$<$=$>$}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{operator$<$=$>$()}{operator<=>()}}
+{\footnotesize\ttfamily std\+::strong\+\_\+ordering play\+Cards\+::\+Card\+::operator$<$=$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \&}]{second\+Card }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em second\+Card} & second argument for comparison operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result of comparison operation (0 -\/ false, 1 -\/ true) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if suits are different \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_cards_1_1_card_a2c0714c351bd7f2b552920c1b4569d74}\label{classplay_cards_1_1_card_a2c0714c351bd7f2b552920c1b4569d74} 
+\index{playCards::Card@{playCards::Card}!operator==@{operator==}}
+\index{operator==@{operator==}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool play\+Cards\+::\+Card\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & second argument for comparison operation == \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result of comparison operation (0 -\/ false, 1 -\/ true) 
+\end{DoxyReturn}
+\Hypertarget{classplay_cards_1_1_card_a2434fc936856a66a73cd1125d59f03cf}\label{classplay_cards_1_1_card_a2434fc936856a66a73cd1125d59f03cf} 
+\index{playCards::Card@{playCards::Card}!setRank@{setRank}}
+\index{setRank@{setRank}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{setRank()}{setRank()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \& play\+Cards\+::\+Card\+::set\+Rank (\begin{DoxyParamCaption}\item[{int}]{rank }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank} & set rank to field of object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+link to object to do chain calls 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if rank is wrong \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_cards_1_1_card_afde77cb7bf36577148694f73fc785af4}\label{classplay_cards_1_1_card_afde77cb7bf36577148694f73fc785af4} 
+\index{playCards::Card@{playCards::Card}!setSuit@{setSuit}}
+\index{setSuit@{setSuit}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{setSuit()}{setSuit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \& play\+Cards\+::\+Card\+::set\+Suit (\begin{DoxyParamCaption}\item[{suits}]{n\+Suit }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Suit} & set suit to field of object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+link to object to do chain calls 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classplay_cards_1_1_card_a23997dfb05faf22154c84ff78569be7c}\label{classplay_cards_1_1_card_a23997dfb05faf22154c84ff78569be7c} 
+\index{playCards::Card@{playCards::Card}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out\+Stream,  }\item[{const \mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \&}]{card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & output values are written here \\
+\hline
+{\em card} & object which we want to output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+out\+Stream -\/ output stream 
+\end{DoxyReturn}
+\Hypertarget{classplay_cards_1_1_card_a8a9c1fcb74d64c5613dc92ccf196cb74}\label{classplay_cards_1_1_card_a8a9c1fcb74d64c5613dc92ccf196cb74} 
+\index{playCards::Card@{playCards::Card}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!playCards::Card@{playCards::Card}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in\+Stream,  }\item[{\mbox{\hyperlink{classplay_cards_1_1_card}{Card}} \&}]{card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Stream} & input values are written here \\
+\hline
+{\em card} & object which we want to input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+in\+Stream -\/ input stream 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if suit is wrong \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+CLion\+Projects/oop2/play\+Cards/play\+Cards.\+h\item 
+CLion\+Projects/oop2/play\+Cards/play\+Cards.\+cpp\end{DoxyCompactItemize}

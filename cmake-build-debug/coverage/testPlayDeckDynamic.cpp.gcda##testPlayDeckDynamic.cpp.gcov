@@ -1,0 +1,2343 @@
+        -:    0:Source:C:/Users/Alexander/CLionProjects/oop2/tests/testPlayDeckDynamic.cpp
+        -:    0:Graph:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug\tests\CMakeFiles\testPlayDeckDynamic.dir\testPlayDeckDynamic.cpp.gcno
+        -:    0:Data:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug\tests\CMakeFiles\testPlayDeckDynamic.dir\testPlayDeckDynamic.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#define CATCH_CONFIG_MAIN
+        -:    2:
+        -:    3:#include "catch.hpp"
+        -:    4:#include "../playDeckDynamic/deck.cpp"
+        -:    5:#include "../playCards/playCards.cpp"
+        -:    6:
+        -:    7:
+function _ZL19C_A_T_C_H_T_E_S_T_0v called 4 returned 100% blocks executed 42%
+        4:    8:TEST_CASE("DeckStaticConstructor") {
+        4:    9:    SECTION("DefaultConstructor") {
+        4:    9-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:    9-block  1
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:    9-block  2
+call    8 returned 4
+branch  9 taken 4 (fallthrough)
+branch 10 taken 0 (throw)
+        4:    9-block  3
+call   11 returned 4
+call   12 returned 4
+call   13 returned 4
+call   14 returned 4
+branch 15 taken 1 (fallthrough)
+branch 16 taken 3
+    $$$$$:    9-block  4
+call   17 never executed
+    $$$$$:    9-block  5
+    $$$$$:    9-block  6
+    $$$$$:    9-block  7
+call   18 never executed
+    $$$$$:    9-block  8
+    $$$$$:    9-block  9
+call   19 never executed
+    $$$$$:    9-block 10
+        1:   10:        playDeckDynamic::Deck deck;
+        1:   10-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   11:        REQUIRE(deck.getCountCards() == 52);
+        1:   11-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   11-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   11-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   11-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   11-block  4
+call   16 returned 1
+        1:   11-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   11-block  6
+call   20 returned 1
+    $$$$$:   11-block  7
+    $$$$$:   11-block  8
+    $$$$$:   11-block  9
+    $$$$$:   11-block 10
+call   21 never executed
+    $$$$$:   11-block 11
+    $$$$$:   11-block 12
+    $$$$$:   11-block 13
+    $$$$$:   11-block 14
+    $$$$$:   11-block 15
+    $$$$$:   11-block 16
+    $$$$$:   11-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   11-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   11-block 19
+call   29 never executed
+    $$$$$:   11-block 20
+call   30 never executed
+        1:   12:        playDeckDynamic::Deck deck1(1);
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13:        deck1[0].setSuit(playCards::Card::suits::diamonds);
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13-block  1
+call    3 returned 1
+        1:   14:        deck1[0].setRank(2);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   14-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   15:        REQUIRE(deck.checkAvailabilityCard(2, playCards::Card::suits::diamonds, 1) == true);
+        1:   15-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   15-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   15-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   15-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   15-block  4
+call   16 returned 1
+        1:   15-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   15-block  6
+call   20 returned 1
+    $$$$$:   15-block  7
+    $$$$$:   15-block  8
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+call   21 never executed
+    $$$$$:   15-block 11
+    $$$$$:   15-block 12
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+    $$$$$:   15-block 15
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   15-block 16
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   15-block 17
+call   29 never executed
+    $$$$$:   15-block 18
+call   30 never executed
+        1:   16:        REQUIRE(deck.checkAvailabilityCard(2, playCards::Card::suits::hears, 1) == false);
+        1:   16-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   16-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   16-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   16-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   16-block  4
+call   16 returned 1
+        1:   16-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   16-block  6
+call   20 returned 1
+    $$$$$:   16-block  7
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+call   21 never executed
+    $$$$$:   16-block 11
+    $$$$$:   16-block 12
+    $$$$$:   16-block 13
+    $$$$$:   16-block 14
+    $$$$$:   16-block 15
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   16-block 16
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   16-block 17
+call   29 never executed
+    $$$$$:   16-block 18
+call   30 never executed
+        5:   17:    }SECTION("InitConstructor") {
+        1:   17-block  0
+call    0 returned 1
+call    1 returned 1
+        4:   17-block  1
+call    2 returned 4
+call    3 returned 4
+call    4 returned 4
+branch  5 taken 4 (fallthrough)
+branch  6 taken 0 (throw)
+        4:   17-block  2
+call    7 returned 4
+call    8 returned 4
+branch  9 taken 4 (fallthrough)
+branch 10 taken 0 (throw)
+        4:   17-block  3
+call   11 returned 4
+branch 12 taken 4 (fallthrough)
+branch 13 taken 0 (throw)
+        4:   17-block  4
+call   14 returned 4
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+branch 18 taken 1 (fallthrough)
+branch 19 taken 3
+    $$$$$:   17-block  5
+call   20 never executed
+    $$$$$:   17-block  6
+call   21 never executed
+    $$$$$:   17-block  7
+call   22 never executed
+    $$$$$:   17-block  8
+call   23 never executed
+    $$$$$:   17-block  9
+    $$$$$:   17-block 10
+    $$$$$:   17-block 11
+call   24 never executed
+    $$$$$:   17-block 12
+    $$$$$:   17-block 13
+call   25 never executed
+    $$$$$:   17-block 14
+        1:   18:        playDeckDynamic::Deck deck(15);
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19:        REQUIRE(deck.getCountCards() == 15);
+        1:   19-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   19-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   19-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   19-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   19-block  4
+call   16 returned 1
+        1:   19-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   19-block  6
+call   20 returned 1
+    $$$$$:   19-block  7
+    $$$$$:   19-block  8
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+call   21 never executed
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+    $$$$$:   19-block 13
+    $$$$$:   19-block 14
+    $$$$$:   19-block 15
+    $$$$$:   19-block 16
+    $$$$$:   19-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   19-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   19-block 19
+call   29 never executed
+    $$$$$:   19-block 20
+call   30 never executed
+        5:   20:    }SECTION("COPY CONSTRUCTOR") {
+        1:   20-block  0
+call    0 returned 1
+        4:   20-block  1
+call    1 returned 4
+call    2 returned 4
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   20-block  2
+call    6 returned 4
+call    7 returned 4
+branch  8 taken 4 (fallthrough)
+branch  9 taken 0 (throw)
+        4:   20-block  3
+call   10 returned 4
+branch 11 taken 4 (fallthrough)
+branch 12 taken 0 (throw)
+        4:   20-block  4
+call   13 returned 4
+call   14 returned 4
+call   15 returned 4
+call   16 returned 4
+branch 17 taken 1 (fallthrough)
+branch 18 taken 3
+    $$$$$:   20-block  5
+call   19 never executed
+    $$$$$:   20-block  6
+call   20 never executed
+    $$$$$:   20-block  7
+call   21 never executed
+    $$$$$:   20-block  8
+    $$$$$:   20-block  9
+    $$$$$:   20-block 10
+call   22 never executed
+    $$$$$:   20-block 11
+    $$$$$:   20-block 12
+call   23 never executed
+    $$$$$:   20-block 13
+        1:   21:        playDeckDynamic::Deck deck1(20);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22:        playDeckDynamic::Deck deck2{deck1};
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23:        REQUIRE(deck1.getCountCards() == deck2.getCountCards());
+        1:   23-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   23-block  1
+call    6 returned 1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   23-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   23-block  3
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:   23-block  4
+call   17 returned 1
+        1:   23-block  5
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   23-block  6
+call   21 returned 1
+    $$$$$:   23-block  7
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+call   22 never executed
+    $$$$$:   23-block 11
+    $$$$$:   23-block 12
+    $$$$$:   23-block 13
+    $$$$$:   23-block 14
+    $$$$$:   23-block 15
+    $$$$$:   23-block 16
+    $$$$$:   23-block 17
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   23-block 18
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   23-block 19
+call   30 never executed
+    $$$$$:   23-block 20
+call   31 never executed
+       21:   24:        for (int i = 0; i < 20; ++i) {
+        1:   24-block  0
+       20:   24-block  1
+       21:   24-block  2
+branch  0 taken 20
+branch  1 taken 1 (fallthrough)
+       20:   25:            REQUIRE(deck1[i] == deck2[i]);
+       20:   25-block  0
+call    0 returned 20
+call    1 returned 20
+call    2 returned 20
+call    3 returned 20
+branch  4 taken 20 (fallthrough)
+branch  5 taken 0 (throw)
+       20:   25-block  1
+call    6 returned 20
+branch  7 taken 20 (fallthrough)
+branch  8 taken 0 (throw)
+       20:   25-block  2
+call    9 returned 20
+branch 10 taken 20 (fallthrough)
+branch 11 taken 0 (throw)
+       20:   25-block  3
+call   12 returned 20
+branch 13 taken 20 (fallthrough)
+branch 14 taken 0 (throw)
+       20:   25-block  4
+call   15 returned 20
+branch 16 taken 20 (fallthrough)
+branch 17 taken 0 (throw)
+       20:   25-block  5
+call   18 returned 20
+branch 19 taken 20 (fallthrough)
+branch 20 taken 0 (throw)
+       20:   25-block  6
+call   21 returned 20
+       20:   25-block  7
+call   22 returned 20
+branch 23 taken 20 (fallthrough)
+branch 24 taken 0 (throw)
+       20:   25-block  8
+call   25 returned 20
+    $$$$$:   25-block  9
+    $$$$$:   25-block 10
+    $$$$$:   25-block 11
+    $$$$$:   25-block 12
+call   26 never executed
+    $$$$$:   25-block 13
+    $$$$$:   25-block 14
+    $$$$$:   25-block 15
+    $$$$$:   25-block 16
+    $$$$$:   25-block 17
+call   27 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   25-block 18
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   25-block 19
+call   34 never executed
+    $$$$$:   25-block 20
+call   35 never executed
+        -:   26:        }
+        5:   27:    }SECTION("MOVE CONSTRUCTOR") {
+        1:   27-block  0
+call    0 returned 1
+call    1 returned 1
+        4:   27-block  1
+call    2 returned 4
+call    3 returned 4
+call    4 returned 4
+branch  5 taken 4 (fallthrough)
+branch  6 taken 0 (throw)
+        4:   27-block  2
+call    7 returned 4
+call    8 returned 4
+branch  9 taken 4 (fallthrough)
+branch 10 taken 0 (throw)
+        4:   27-block  3
+call   11 returned 4
+branch 12 taken 4 (fallthrough)
+branch 13 taken 0 (throw)
+        4:   27-block  4
+call   14 returned 4
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+branch 18 taken 1 (fallthrough)
+branch 19 taken 3
+    $$$$$:   27-block  5
+call   20 never executed
+    $$$$$:   27-block  6
+call   21 never executed
+    $$$$$:   27-block  7
+call   22 never executed
+    $$$$$:   27-block  8
+call   23 never executed
+    $$$$$:   27-block  9
+    $$$$$:   27-block 10
+    $$$$$:   27-block 11
+call   24 never executed
+    $$$$$:   27-block 12
+    $$$$$:   27-block 13
+call   25 never executed
+    $$$$$:   27-block 14
+        1:   28:        playDeckDynamic::Deck deck1(20);
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   29:        playDeckDynamic::Deck deck2 = std::move(deck1);
+        1:   29-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   30:        REQUIRE(deck1.getCountCards() == 0);
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   30-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   30-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   30-block  2
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   30-block  3
+call   16 returned 1
+        1:   30-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   30-block  5
+call   20 returned 1
+    $$$$$:   30-block  6
+    $$$$$:   30-block  7
+    $$$$$:   30-block  8
+    $$$$$:   30-block  9
+call   21 never executed
+    $$$$$:   30-block 10
+    $$$$$:   30-block 11
+    $$$$$:   30-block 12
+    $$$$$:   30-block 13
+    $$$$$:   30-block 14
+    $$$$$:   30-block 15
+    $$$$$:   30-block 16
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   30-block 17
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   30-block 18
+call   29 never executed
+    $$$$$:   30-block 19
+call   30 never executed
+        1:   31:        REQUIRE(deck1.getDeck() == nullptr);
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   31-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   31-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   31-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   31-block  4
+call   16 returned 1
+        1:   31-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   31-block  6
+call   20 returned 1
+    $$$$$:   31-block  7
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+call   21 never executed
+    $$$$$:   31-block 11
+    $$$$$:   31-block 12
+    $$$$$:   31-block 13
+    $$$$$:   31-block 14
+    $$$$$:   31-block 15
+    $$$$$:   31-block 16
+    $$$$$:   31-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   31-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   31-block 19
+call   29 never executed
+    $$$$$:   31-block 20
+call   30 never executed
+        1:   32:        REQUIRE(deck2.getCountCards() == 20);
+        1:   32-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   32-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   32-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   32-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   32-block  4
+call   16 returned 1
+        1:   32-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   32-block  6
+call   20 returned 1
+    $$$$$:   32-block  7
+    $$$$$:   32-block  8
+    $$$$$:   32-block  9
+    $$$$$:   32-block 10
+call   21 never executed
+    $$$$$:   32-block 11
+    $$$$$:   32-block 12
+    $$$$$:   32-block 13
+    $$$$$:   32-block 14
+    $$$$$:   32-block 15
+    $$$$$:   32-block 16
+    $$$$$:   32-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   32-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   32-block 19
+call   29 never executed
+    $$$$$:   32-block 20
+call   30 never executed
+        5:   33:    }
+        1:   33-block  0
+call    0 returned 1
+call    1 returned 1
+        4:   33-block  1
+call    2 returned 4
+    $$$$$:   33-block  2
+call    3 never executed
+    $$$$$:   33-block  3
+call    4 never executed
+    $$$$$:   33-block  4
+call    5 never executed
+        4:   34:}
+        -:   35:
+function _ZL19C_A_T_C_H_T_E_S_T_6v called 7 returned 100% blocks executed 44%
+        7:   36:TEST_CASE("DeckStaticOperators") {
+        7:   37:    SECTION("IND >>") {
+        7:   37-block  0
+call    0 returned 7
+call    1 returned 7
+branch  2 taken 7 (fallthrough)
+branch  3 taken 0 (throw)
+        7:   37-block  1
+call    4 returned 7
+call    5 returned 7
+branch  6 taken 7 (fallthrough)
+branch  7 taken 0 (throw)
+        7:   37-block  2
+call    8 returned 7
+branch  9 taken 7 (fallthrough)
+branch 10 taken 0 (throw)
+        7:   37-block  3
+call   11 returned 7
+call   12 returned 7
+call   13 returned 7
+call   14 returned 7
+branch 15 taken 1 (fallthrough)
+branch 16 taken 6
+    $$$$$:   37-block  4
+call   17 never executed
+    $$$$$:   37-block  5
+    $$$$$:   37-block  6
+    $$$$$:   37-block  7
+call   18 never executed
+    $$$$$:   37-block  8
+    $$$$$:   37-block  9
+call   19 never executed
+    $$$$$:   37-block 10
+        1:   38:        playDeckDynamic::Deck dc1(10);
+        1:   38-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   39:        playDeckDynamic::Deck dc2(10);
+        1:   39-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   40:        dc1 >> dc2;
+        1:   40-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   41:        REQUIRE(dc1.getCountCards() == 9);
+        1:   41-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   41-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   41-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   41-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   41-block  4
+call   16 returned 1
+        1:   41-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   41-block  6
+call   20 returned 1
+    $$$$$:   41-block  7
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+    $$$$$:   41-block 10
+call   21 never executed
+    $$$$$:   41-block 11
+    $$$$$:   41-block 12
+    $$$$$:   41-block 13
+    $$$$$:   41-block 14
+    $$$$$:   41-block 15
+    $$$$$:   41-block 16
+    $$$$$:   41-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   41-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   41-block 19
+call   29 never executed
+    $$$$$:   41-block 20
+call   30 never executed
+        1:   42:        REQUIRE(dc2.getCountCards() == 11);
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   42-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   42-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   42-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   42-block  4
+call   16 returned 1
+        1:   42-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   42-block  6
+call   20 returned 1
+    $$$$$:   42-block  7
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+    $$$$$:   42-block 10
+call   21 never executed
+    $$$$$:   42-block 11
+    $$$$$:   42-block 12
+    $$$$$:   42-block 13
+    $$$$$:   42-block 14
+    $$$$$:   42-block 15
+    $$$$$:   42-block 16
+    $$$$$:   42-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   42-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   42-block 19
+call   29 never executed
+    $$$$$:   42-block 20
+call   30 never executed
+        1:   43:        playDeckDynamic::Deck dc3;
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   44:        dc1 >> dc3;
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45:        playDeckDynamic::Deck dc0(1);
+        1:   45-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46:        dc0.deleteCard(0);
+        1:   46-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   47:        REQUIRE_THROWS(dc0 >> dc2);
+        1:   47-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   47-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   47-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   47-block  3
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:   47-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   47-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+        1:   47-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   47-block  7
+call   23 returned 1
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+        1:   47-block 11
+        1:   47-block 12
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   47-block 13
+call   28 returned 1
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0 (throw)
+    $$$$$:   47-block 14
+call   31 never executed
+    $$$$$:   47-block 15
+call   32 never executed
+        8:   48:    } SECTION("+") {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+        7:   48-block  0
+call    4 returned 7
+call    5 returned 7
+call    6 returned 7
+branch  7 taken 7 (fallthrough)
+branch  8 taken 0 (throw)
+        7:   48-block  1
+call    9 returned 7
+call   10 returned 7
+branch 11 taken 7 (fallthrough)
+branch 12 taken 0 (throw)
+        7:   48-block  2
+call   13 returned 7
+branch 14 taken 7 (fallthrough)
+branch 15 taken 0 (throw)
+        7:   48-block  3
+call   16 returned 7
+call   17 returned 7
+call   18 returned 7
+call   19 returned 7
+branch 20 taken 1 (fallthrough)
+branch 21 taken 6
+    $$$$$:   48-block  4
+call   22 never executed
+    $$$$$:   48-block  5
+call   23 never executed
+    $$$$$:   48-block  6
+call   24 never executed
+    $$$$$:   48-block  7
+call   25 never executed
+    $$$$$:   48-block  8
+call   26 never executed
+    $$$$$:   48-block  9
+call   27 never executed
+    $$$$$:   48-block 10
+    $$$$$:   48-block 11
+    $$$$$:   48-block 12
+call   28 never executed
+    $$$$$:   48-block 13
+    $$$$$:   48-block 14
+call   29 never executed
+    $$$$$:   48-block 15
+        1:   49:        playDeckDynamic::Deck dc(10);
+        1:   49-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   50:        playDeckDynamic::Deck dc1(13);
+        1:   50-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   51:        playDeckDynamic::Deck dc2 = dc + dc1;
+        1:   51-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   52:        REQUIRE(dc2.getCountCards() == 23);
+        1:   52-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   52-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   52-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   52-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   52-block  4
+call   16 returned 1
+        1:   52-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   52-block  6
+call   20 returned 1
+    $$$$$:   52-block  7
+    $$$$$:   52-block  8
+    $$$$$:   52-block  9
+    $$$$$:   52-block 10
+call   21 never executed
+    $$$$$:   52-block 11
+    $$$$$:   52-block 12
+    $$$$$:   52-block 13
+    $$$$$:   52-block 14
+    $$$$$:   52-block 15
+    $$$$$:   52-block 16
+    $$$$$:   52-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   52-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   52-block 19
+call   29 never executed
+    $$$$$:   52-block 20
+call   30 never executed
+        8:   53:    }SECTION("<< AND >>") {
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        7:   53-block  1
+call    3 returned 7
+call    4 returned 7
+call    5 returned 7
+branch  6 taken 7 (fallthrough)
+branch  7 taken 0 (throw)
+        7:   53-block  2
+call    8 returned 7
+call    9 returned 7
+branch 10 taken 7 (fallthrough)
+branch 11 taken 0 (throw)
+        7:   53-block  3
+call   12 returned 7
+branch 13 taken 7 (fallthrough)
+branch 14 taken 0 (throw)
+        7:   53-block  4
+call   15 returned 7
+call   16 returned 7
+call   17 returned 7
+call   18 returned 7
+branch 19 taken 1 (fallthrough)
+branch 20 taken 6
+    $$$$$:   53-block  5
+call   21 never executed
+    $$$$$:   53-block  6
+call   22 never executed
+    $$$$$:   53-block  7
+call   23 never executed
+    $$$$$:   53-block  8
+call   24 never executed
+    $$$$$:   53-block  9
+call   25 never executed
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+    $$$$$:   53-block 12
+call   26 never executed
+    $$$$$:   53-block 13
+    $$$$$:   53-block 14
+call   27 never executed
+    $$$$$:   53-block 15
+        1:   54:        playDeckDynamic::Deck deck;
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   55:        std::cin >> deck;
+        1:   55-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   56:        std::cout << deck;
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        8:   57:    } SECTION("= COPY") {
+        1:   57-block  0
+call    0 returned 1
+        7:   57-block  1
+call    1 returned 7
+call    2 returned 7
+call    3 returned 7
+branch  4 taken 7 (fallthrough)
+branch  5 taken 0 (throw)
+        7:   57-block  2
+call    6 returned 7
+call    7 returned 7
+branch  8 taken 7 (fallthrough)
+branch  9 taken 0 (throw)
+        7:   57-block  3
+call   10 returned 7
+branch 11 taken 7 (fallthrough)
+branch 12 taken 0 (throw)
+        7:   57-block  4
+call   13 returned 7
+call   14 returned 7
+call   15 returned 7
+call   16 returned 7
+branch 17 taken 1 (fallthrough)
+branch 18 taken 6
+    $$$$$:   57-block  5
+call   19 never executed
+    $$$$$:   57-block  6
+call   20 never executed
+    $$$$$:   57-block  7
+call   21 never executed
+    $$$$$:   57-block  8
+    $$$$$:   57-block  9
+    $$$$$:   57-block 10
+call   22 never executed
+    $$$$$:   57-block 11
+    $$$$$:   57-block 12
+call   23 never executed
+    $$$$$:   57-block 13
+        1:   58:        playDeckDynamic::Deck deck1(20);
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   59:        playDeckDynamic::Deck deck2;
+        1:   59-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60:        deck2 = deck1;
+        1:   60-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       21:   61:        for (int i = 0; i < 20; ++i) {
+        1:   61-block  0
+       20:   61-block  1
+       21:   61-block  2
+branch  0 taken 20
+branch  1 taken 1 (fallthrough)
+       20:   62:            REQUIRE(deck1[i] == deck2[i]);
+       20:   62-block  0
+call    0 returned 20
+call    1 returned 20
+call    2 returned 20
+call    3 returned 20
+branch  4 taken 20 (fallthrough)
+branch  5 taken 0 (throw)
+       20:   62-block  1
+call    6 returned 20
+branch  7 taken 20 (fallthrough)
+branch  8 taken 0 (throw)
+       20:   62-block  2
+call    9 returned 20
+branch 10 taken 20 (fallthrough)
+branch 11 taken 0 (throw)
+       20:   62-block  3
+call   12 returned 20
+branch 13 taken 20 (fallthrough)
+branch 14 taken 0 (throw)
+       20:   62-block  4
+call   15 returned 20
+branch 16 taken 20 (fallthrough)
+branch 17 taken 0 (throw)
+       20:   62-block  5
+call   18 returned 20
+branch 19 taken 20 (fallthrough)
+branch 20 taken 0 (throw)
+       20:   62-block  6
+call   21 returned 20
+       20:   62-block  7
+call   22 returned 20
+branch 23 taken 20 (fallthrough)
+branch 24 taken 0 (throw)
+       20:   62-block  8
+call   25 returned 20
+    $$$$$:   62-block  9
+    $$$$$:   62-block 10
+    $$$$$:   62-block 11
+    $$$$$:   62-block 12
+call   26 never executed
+    $$$$$:   62-block 13
+    $$$$$:   62-block 14
+    $$$$$:   62-block 15
+    $$$$$:   62-block 16
+    $$$$$:   62-block 17
+call   27 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   62-block 18
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   62-block 19
+call   34 never executed
+    $$$$$:   62-block 20
+call   35 never executed
+        -:   63:        }
+        8:   64:    }SECTION("= MOVE") {
+        1:   64-block  0
+call    0 returned 1
+call    1 returned 1
+        7:   64-block  1
+call    2 returned 7
+call    3 returned 7
+call    4 returned 7
+branch  5 taken 7 (fallthrough)
+branch  6 taken 0 (throw)
+        7:   64-block  2
+call    7 returned 7
+call    8 returned 7
+branch  9 taken 7 (fallthrough)
+branch 10 taken 0 (throw)
+        7:   64-block  3
+call   11 returned 7
+branch 12 taken 7 (fallthrough)
+branch 13 taken 0 (throw)
+        7:   64-block  4
+call   14 returned 7
+call   15 returned 7
+call   16 returned 7
+call   17 returned 7
+branch 18 taken 1 (fallthrough)
+branch 19 taken 6
+    $$$$$:   64-block  5
+call   20 never executed
+    $$$$$:   64-block  6
+call   21 never executed
+    $$$$$:   64-block  7
+call   22 never executed
+    $$$$$:   64-block  8
+call   23 never executed
+    $$$$$:   64-block  9
+    $$$$$:   64-block 10
+    $$$$$:   64-block 11
+call   24 never executed
+    $$$$$:   64-block 12
+    $$$$$:   64-block 13
+call   25 never executed
+    $$$$$:   64-block 14
+        1:   65:        playDeckDynamic::Deck deck1(15);
+        1:   65-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   66:        playDeckDynamic::Deck deck2;
+        1:   66-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   67:        deck2 = std::move(deck1);
+        1:   67-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   68:        REQUIRE(deck1.getCountCards() == 0);
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   68-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   68-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   68-block  2
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   68-block  3
+call   16 returned 1
+        1:   68-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   68-block  5
+call   20 returned 1
+    $$$$$:   68-block  6
+    $$$$$:   68-block  7
+    $$$$$:   68-block  8
+    $$$$$:   68-block  9
+call   21 never executed
+    $$$$$:   68-block 10
+    $$$$$:   68-block 11
+    $$$$$:   68-block 12
+    $$$$$:   68-block 13
+    $$$$$:   68-block 14
+    $$$$$:   68-block 15
+    $$$$$:   68-block 16
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   68-block 17
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   68-block 18
+call   29 never executed
+    $$$$$:   68-block 19
+call   30 never executed
+        1:   69:        REQUIRE(deck1.getDeck() == nullptr);
+        1:   69-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   69-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   69-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   69-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   69-block  4
+call   16 returned 1
+        1:   69-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   69-block  6
+call   20 returned 1
+    $$$$$:   69-block  7
+    $$$$$:   69-block  8
+    $$$$$:   69-block  9
+    $$$$$:   69-block 10
+call   21 never executed
+    $$$$$:   69-block 11
+    $$$$$:   69-block 12
+    $$$$$:   69-block 13
+    $$$$$:   69-block 14
+    $$$$$:   69-block 15
+    $$$$$:   69-block 16
+    $$$$$:   69-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   69-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   69-block 19
+call   29 never executed
+    $$$$$:   69-block 20
+call   30 never executed
+        1:   70:        REQUIRE(deck2.getCountCards() == 15);
+        1:   70-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   70-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   70-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   70-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   70-block  4
+call   16 returned 1
+        1:   70-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   70-block  6
+call   20 returned 1
+    $$$$$:   70-block  7
+    $$$$$:   70-block  8
+    $$$$$:   70-block  9
+    $$$$$:   70-block 10
+call   21 never executed
+    $$$$$:   70-block 11
+    $$$$$:   70-block 12
+    $$$$$:   70-block 13
+    $$$$$:   70-block 14
+    $$$$$:   70-block 15
+    $$$$$:   70-block 16
+    $$$$$:   70-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   70-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   70-block 19
+call   29 never executed
+    $$$$$:   70-block 20
+call   30 never executed
+        8:   71:    }SECTION("++") {
+        1:   71-block  0
+call    0 returned 1
+call    1 returned 1
+        7:   71-block  1
+call    2 returned 7
+call    3 returned 7
+call    4 returned 7
+branch  5 taken 7 (fallthrough)
+branch  6 taken 0 (throw)
+        7:   71-block  2
+call    7 returned 7
+call    8 returned 7
+branch  9 taken 7 (fallthrough)
+branch 10 taken 0 (throw)
+        7:   71-block  3
+call   11 returned 7
+branch 12 taken 7 (fallthrough)
+branch 13 taken 0 (throw)
+        7:   71-block  4
+call   14 returned 7
+call   15 returned 7
+call   16 returned 7
+call   17 returned 7
+branch 18 taken 1 (fallthrough)
+branch 19 taken 6
+    $$$$$:   71-block  5
+call   20 never executed
+    $$$$$:   71-block  6
+call   21 never executed
+    $$$$$:   71-block  7
+call   22 never executed
+    $$$$$:   71-block  8
+call   23 never executed
+    $$$$$:   71-block  9
+    $$$$$:   71-block 10
+    $$$$$:   71-block 11
+call   24 never executed
+    $$$$$:   71-block 12
+    $$$$$:   71-block 13
+call   25 never executed
+    $$$$$:   71-block 14
+        1:   72:        playDeckDynamic::Deck deck(15);
+        1:   72-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   73:        ++deck;
+        1:   73-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   74:        deck++;
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   74-block  1
+call    3 returned 1
+        1:   75:        REQUIRE(deck.getCountCards() == 17);
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   75-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   75-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   75-block  2
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   75-block  3
+call   16 returned 1
+        1:   75-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   75-block  5
+call   20 returned 1
+    $$$$$:   75-block  6
+    $$$$$:   75-block  7
+    $$$$$:   75-block  8
+    $$$$$:   75-block  9
+call   21 never executed
+    $$$$$:   75-block 10
+    $$$$$:   75-block 11
+    $$$$$:   75-block 12
+    $$$$$:   75-block 13
+    $$$$$:   75-block 14
+    $$$$$:   75-block 15
+    $$$$$:   75-block 16
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   75-block 17
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   75-block 18
+call   29 never executed
+    $$$$$:   75-block 19
+call   30 never executed
+        8:   76:    }SECTION("+=") {
+        1:   76-block  0
+call    0 returned 1
+        7:   76-block  1
+call    1 returned 7
+call    2 returned 7
+call    3 returned 7
+branch  4 taken 7 (fallthrough)
+branch  5 taken 0 (throw)
+        7:   76-block  2
+call    6 returned 7
+call    7 returned 7
+branch  8 taken 7 (fallthrough)
+branch  9 taken 0 (throw)
+        7:   76-block  3
+call   10 returned 7
+branch 11 taken 7 (fallthrough)
+branch 12 taken 0 (throw)
+        7:   76-block  4
+call   13 returned 7
+call   14 returned 7
+call   15 returned 7
+call   16 returned 7
+branch 17 taken 1 (fallthrough)
+branch 18 taken 6
+    $$$$$:   76-block  5
+call   19 never executed
+    $$$$$:   76-block  6
+call   20 never executed
+    $$$$$:   76-block  7
+call   21 never executed
+    $$$$$:   76-block  8
+    $$$$$:   76-block  9
+    $$$$$:   76-block 10
+call   22 never executed
+    $$$$$:   76-block 11
+    $$$$$:   76-block 12
+call   23 never executed
+    $$$$$:   76-block 13
+        1:   77:        playDeckDynamic::Deck deck1(20);
+        1:   77-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   78:        playDeckDynamic::Deck deck2(15);
+        1:   78-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   79:        deck1 += deck2;
+        1:   79-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   79-block  1
+call    3 returned 1
+        1:   80:        REQUIRE(deck1.getCountCards() == 35);
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   80-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   80-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   80-block  2
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   80-block  3
+call   16 returned 1
+        1:   80-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   80-block  5
+call   20 returned 1
+    $$$$$:   80-block  6
+    $$$$$:   80-block  7
+    $$$$$:   80-block  8
+    $$$$$:   80-block  9
+call   21 never executed
+    $$$$$:   80-block 10
+    $$$$$:   80-block 11
+    $$$$$:   80-block 12
+    $$$$$:   80-block 13
+    $$$$$:   80-block 14
+    $$$$$:   80-block 15
+    $$$$$:   80-block 16
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   80-block 17
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   80-block 18
+call   29 never executed
+    $$$$$:   80-block 19
+call   30 never executed
+        1:   81:        REQUIRE(deck2.getCountCards() == 15);
+        1:   81-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   81-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   81-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   81-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   81-block  4
+call   16 returned 1
+        1:   81-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   81-block  6
+call   20 returned 1
+    $$$$$:   81-block  7
+    $$$$$:   81-block  8
+    $$$$$:   81-block  9
+    $$$$$:   81-block 10
+call   21 never executed
+    $$$$$:   81-block 11
+    $$$$$:   81-block 12
+    $$$$$:   81-block 13
+    $$$$$:   81-block 14
+    $$$$$:   81-block 15
+    $$$$$:   81-block 16
+    $$$$$:   81-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   81-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   81-block 19
+call   29 never executed
+    $$$$$:   81-block 20
+call   30 never executed
+        8:   82:    }
+        1:   82-block  0
+call    0 returned 1
+call    1 returned 1
+        7:   82-block  1
+call    2 returned 7
+    $$$$$:   82-block  2
+call    3 never executed
+    $$$$$:   82-block  3
+call    4 never executed
+    $$$$$:   82-block  4
+call    5 never executed
+        7:   83:}
+        -:   84:
+        -:   85:
+function _ZL20C_A_T_C_H_T_E_S_T_15v called 5 returned 100% blocks executed 46%
+        5:   86:TEST_CASE("DeckStaticMethods", "Setters") {
+        5:   87:    SECTION("ADD DELETE CARD") {
+        5:   87-block  0
+call    0 returned 5
+call    1 returned 5
+branch  2 taken 5 (fallthrough)
+branch  3 taken 0 (throw)
+        5:   87-block  1
+call    4 returned 5
+call    5 returned 5
+branch  6 taken 5 (fallthrough)
+branch  7 taken 0 (throw)
+        5:   87-block  2
+call    8 returned 5
+branch  9 taken 5 (fallthrough)
+branch 10 taken 0 (throw)
+        5:   87-block  3
+call   11 returned 5
+call   12 returned 5
+call   13 returned 5
+call   14 returned 5
+branch 15 taken 1 (fallthrough)
+branch 16 taken 4
+    $$$$$:   87-block  4
+call   17 never executed
+    $$$$$:   87-block  5
+    $$$$$:   87-block  6
+    $$$$$:   87-block  7
+call   18 never executed
+    $$$$$:   87-block  8
+    $$$$$:   87-block  9
+call   19 never executed
+    $$$$$:   87-block 10
+        1:   88:        playDeckDynamic::Deck deck;
+        1:   88-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   89:        deck.addRandomCard();
+        1:   89-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   90:        deck.addCard(12, playCards::Card::suits::hears);
+        1:   90-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   91:        deck.deleteCard(12);
+        1:   91-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   92:        REQUIRE(deck.getCountCards() == 53);
+        1:   92-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   92-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   92-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   92-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   92-block  4
+call   16 returned 1
+        1:   92-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   92-block  6
+call   20 returned 1
+    $$$$$:   92-block  7
+    $$$$$:   92-block  8
+    $$$$$:   92-block  9
+    $$$$$:   92-block 10
+call   21 never executed
+    $$$$$:   92-block 11
+    $$$$$:   92-block 12
+    $$$$$:   92-block 13
+    $$$$$:   92-block 14
+    $$$$$:   92-block 15
+    $$$$$:   92-block 16
+    $$$$$:   92-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   92-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   92-block 19
+call   29 never executed
+    $$$$$:   92-block 20
+call   30 never executed
+       1*:   93:        REQUIRE_THROWS(deck.deleteCard(4124));
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   93-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   93-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   93-block  3
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:   93-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   93-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+        1:   93-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   93-block  7
+call   23 returned 1
+    $$$$$:   93-block  8
+    $$$$$:   93-block  9
+    $$$$$:   93-block 10
+        1:   93-block 11
+        1:   93-block 12
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   93-block 13
+call   28 returned 1
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0 (throw)
+    $$$$$:   93-block 14
+call   31 never executed
+    $$$$$:   93-block 15
+call   32 never executed
+        6:   94:    }SECTION("ARRANGING DECK") {
+call    0 returned 1
+        5:   94-block  0
+call    1 returned 5
+call    2 returned 5
+call    3 returned 5
+branch  4 taken 5 (fallthrough)
+branch  5 taken 0 (throw)
+        5:   94-block  1
+call    6 returned 5
+call    7 returned 5
+branch  8 taken 5 (fallthrough)
+branch  9 taken 0 (throw)
+        5:   94-block  2
+call   10 returned 5
+branch 11 taken 5 (fallthrough)
+branch 12 taken 0 (throw)
+        5:   94-block  3
+call   13 returned 5
+call   14 returned 5
+call   15 returned 5
+call   16 returned 5
+branch 17 taken 1 (fallthrough)
+branch 18 taken 4
+    $$$$$:   94-block  4
+call   19 never executed
+    $$$$$:   94-block  5
+call   20 never executed
+    $$$$$:   94-block  6
+call   21 never executed
+    $$$$$:   94-block  7
+    $$$$$:   94-block  8
+    $$$$$:   94-block  9
+call   22 never executed
+    $$$$$:   94-block 10
+    $$$$$:   94-block 11
+call   23 never executed
+    $$$$$:   94-block 12
+        1:   95:        playDeckDynamic::Deck deck(52);
+        1:   95-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   96:        deck.arrangingDeck();
+        1:   96-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   97:        REQUIRE(deck[0].getSuit() == playCards::Card::suits::diamonds);
+        1:   97-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   97-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   97-block  2
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   97-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   97-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   97-block  5
+call   19 returned 1
+        1:   97-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   97-block  7
+call   23 returned 1
+    $$$$$:   97-block  8
+    $$$$$:   97-block  9
+    $$$$$:   97-block 10
+    $$$$$:   97-block 11
+call   24 never executed
+    $$$$$:   97-block 12
+    $$$$$:   97-block 13
+    $$$$$:   97-block 14
+    $$$$$:   97-block 15
+    $$$$$:   97-block 16
+    $$$$$:   97-block 17
+    $$$$$:   97-block 18
+call   25 never executed
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   97-block 19
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   97-block 20
+call   32 never executed
+    $$$$$:   97-block 21
+call   33 never executed
+        1:   98:        REQUIRE(deck[0].getRank() == 2);
+        1:   98-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   98-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   98-block  2
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   98-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   98-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   98-block  5
+call   19 returned 1
+        1:   98-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   98-block  7
+call   23 returned 1
+    $$$$$:   98-block  8
+    $$$$$:   98-block  9
+    $$$$$:   98-block 10
+    $$$$$:   98-block 11
+call   24 never executed
+    $$$$$:   98-block 12
+    $$$$$:   98-block 13
+    $$$$$:   98-block 14
+    $$$$$:   98-block 15
+    $$$$$:   98-block 16
+    $$$$$:   98-block 17
+    $$$$$:   98-block 18
+call   25 never executed
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   98-block 19
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   98-block 20
+call   32 never executed
+    $$$$$:   98-block 21
+call   33 never executed
+        1:   99:        REQUIRE(deck[51].getSuit() == playCards::Card::suits::spades);
+        1:   99-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   99-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   99-block  2
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   99-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   99-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   99-block  5
+call   19 returned 1
+        1:   99-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   99-block  7
+call   23 returned 1
+    $$$$$:   99-block  8
+    $$$$$:   99-block  9
+    $$$$$:   99-block 10
+    $$$$$:   99-block 11
+call   24 never executed
+    $$$$$:   99-block 12
+    $$$$$:   99-block 13
+    $$$$$:   99-block 14
+    $$$$$:   99-block 15
+    $$$$$:   99-block 16
+    $$$$$:   99-block 17
+    $$$$$:   99-block 18
+call   25 never executed
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   99-block 19
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   99-block 20
+call   32 never executed
+    $$$$$:   99-block 21
+call   33 never executed
+        1:  100:        REQUIRE(deck[51].getRank() == 14);
+        1:  100-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  100-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  100-block  2
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  100-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  100-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  100-block  5
+call   19 returned 1
+        1:  100-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  100-block  7
+call   23 returned 1
+    $$$$$:  100-block  8
+    $$$$$:  100-block  9
+    $$$$$:  100-block 10
+    $$$$$:  100-block 11
+call   24 never executed
+    $$$$$:  100-block 12
+    $$$$$:  100-block 13
+    $$$$$:  100-block 14
+    $$$$$:  100-block 15
+    $$$$$:  100-block 16
+    $$$$$:  100-block 17
+    $$$$$:  100-block 18
+call   25 never executed
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:  100-block 19
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:  100-block 20
+call   32 never executed
+    $$$$$:  100-block 21
+call   33 never executed
+        6:  101:    }SECTION("MIXING") {
+        1:  101-block  0
+call    0 returned 1
+        5:  101-block  1
+call    1 returned 5
+call    2 returned 5
+call    3 returned 5
+branch  4 taken 5 (fallthrough)
+branch  5 taken 0 (throw)
+        5:  101-block  2
+call    6 returned 5
+call    7 returned 5
+branch  8 taken 5 (fallthrough)
+branch  9 taken 0 (throw)
+        5:  101-block  3
+call   10 returned 5
+branch 11 taken 5 (fallthrough)
+branch 12 taken 0 (throw)
+        5:  101-block  4
+call   13 returned 5
+call   14 returned 5
+call   15 returned 5
+call   16 returned 5
+branch 17 taken 1 (fallthrough)
+branch 18 taken 4
+    $$$$$:  101-block  5
+call   19 never executed
+    $$$$$:  101-block  6
+call   20 never executed
+    $$$$$:  101-block  7
+call   21 never executed
+    $$$$$:  101-block  8
+    $$$$$:  101-block  9
+    $$$$$:  101-block 10
+call   22 never executed
+    $$$$$:  101-block 11
+    $$$$$:  101-block 12
+call   23 never executed
+    $$$$$:  101-block 13
+        1:  102:        playDeckDynamic::Deck deck1(10);
+        1:  102-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  103:        playDeckDynamic::Deck deck2(10);
+        1:  103-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       11:  104:        for (int i = 0; i < 10; ++i) {
+        1:  104-block  0
+       11:  104-block  1
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+       10:  105:            deck2[2] = deck1[i];
+       10:  105-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:  105-block  1
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
+branch  5 taken 0 (throw)
+       10:  105-block  2
+        -:  106:        }
+        1:  107:        deck1.mixingDeck();
+        1:  107-block  0
+call    0 returned 1
+        6:  108:    } SECTION("ONESUIT") {
+call    0 returned 1
+call    1 returned 1
+        5:  108-block  0
+call    2 returned 5
+call    3 returned 5
+call    4 returned 5
+branch  5 taken 5 (fallthrough)
+branch  6 taken 0 (throw)
+        5:  108-block  1
+call    7 returned 5
+call    8 returned 5
+branch  9 taken 5 (fallthrough)
+branch 10 taken 0 (throw)
+        5:  108-block  2
+call   11 returned 5
+branch 12 taken 5 (fallthrough)
+branch 13 taken 0 (throw)
+        5:  108-block  3
+call   14 returned 5
+call   15 returned 5
+call   16 returned 5
+call   17 returned 5
+branch 18 taken 1 (fallthrough)
+branch 19 taken 4
+    $$$$$:  108-block  4
+call   20 never executed
+    $$$$$:  108-block  5
+call   21 never executed
+    $$$$$:  108-block  6
+call   22 never executed
+    $$$$$:  108-block  7
+call   23 never executed
+    $$$$$:  108-block  8
+    $$$$$:  108-block  9
+    $$$$$:  108-block 10
+call   24 never executed
+    $$$$$:  108-block 11
+    $$$$$:  108-block 12
+call   25 never executed
+    $$$$$:  108-block 13
+        1:  109:        playDeckDynamic::Deck dc(30);
+        1:  109-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  110:        playDeckDynamic::Deck dc1 = dc.newDeckBySuit(playCards::Card::suits::hears);
+        1:  110-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  111:    } SECTION("GETTERS AND SETTERS") {
+        1:  111-block  0
+call    0 returned 1
+call    1 returned 1
+        5:  111-block  1
+call    2 returned 5
+call    3 returned 5
+call    4 returned 5
+branch  5 taken 5 (fallthrough)
+branch  6 taken 0 (throw)
+        5:  111-block  2
+call    7 returned 5
+call    8 returned 5
+branch  9 taken 5 (fallthrough)
+branch 10 taken 0 (throw)
+        5:  111-block  3
+call   11 returned 5
+branch 12 taken 5 (fallthrough)
+branch 13 taken 0 (throw)
+        5:  111-block  4
+call   14 returned 5
+call   15 returned 5
+call   16 returned 5
+call   17 returned 5
+branch 18 taken 1 (fallthrough)
+branch 19 taken 4
+    $$$$$:  111-block  5
+call   20 never executed
+    $$$$$:  111-block  6
+call   21 never executed
+    $$$$$:  111-block  7
+call   22 never executed
+    $$$$$:  111-block  8
+    $$$$$:  111-block  9
+    $$$$$:  111-block 10
+call   23 never executed
+    $$$$$:  111-block 11
+    $$$$$:  111-block 12
+call   24 never executed
+    $$$$$:  111-block 13
+        1:  112:        playDeckDynamic::Deck deck(20);
+        1:  112-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  113:        deck.setCountCards(15);
+        1:  113-block  0
+call    0 returned 1
+        6:  114:    }
+call    0 returned 1
+        5:  114-block  0
+call    1 returned 5
+    $$$$$:  114-block  1
+call    2 never executed
+        5:  115:}

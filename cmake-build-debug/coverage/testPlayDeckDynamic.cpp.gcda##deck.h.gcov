@@ -1,0 +1,216 @@
+        -:    0:Source:C:/Users/Alexander/CLionProjects/oop2/playDeckDynamic/deck.h
+        -:    0:Graph:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug\tests\CMakeFiles\testPlayDeckDynamic.dir\testPlayDeckDynamic.cpp.gcno
+        -:    0:Data:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug\tests\CMakeFiles\testPlayDeckDynamic.dir\testPlayDeckDynamic.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include "../playCards/playCards.h"
+        -:    3:
+        -:    4:#ifndef DECK_H
+        -:    5:#define DECK_H
+        -:    6:
+        -:    7:namespace playDeckDynamic{
+        -:    8:    class Deck{
+        -:    9:    private:
+        -:   10:        int countCards;
+        -:   11:        static const int MAXDECKSIZE = 52;
+        -:   12:        playCards::Card *deck;
+        -:   13:
+        -:   14:        static int compare(const void *a, const void *b);
+        -:   15:
+        -:   16:        void createRandomDeck(int count);
+        -:   17:
+        -:   18:        void resize(int oldLength, int newLength);
+        -:   19:
+        -:   20:    public:
+        -:   21:
+        -:   22:        /*!
+        -:   23:         *
+        -:   24:         * @param count create deck with this count of cards
+        -:   25:         * @throws std::invalid_argument if (count < 0 || count >= MAXDECKSIZE)
+        -:   26:         */
+        -:   27:        explicit Deck(int count);
+        -:   28:
+        -:   29:        /*!
+        -:   30:         * create deck with 52 cards sorted by rank and suit
+        -:   31:         */
+        -:   32:        Deck();
+        -:   33:
+        -:   34:        /*!
+        -:   35:         *
+        -:   36:         * @param secondDeck copy this deck to object(this) by value
+        -:   37:         */
+        -:   38:        Deck(const Deck &secondDeck);
+        -:   39:
+        -:   40:        /*!
+        -:   41:         *
+        -:   42:         * @param secondDeck copy this deck to object(this) by addres
+        -:   43:         */
+        -:   44:        Deck(Deck &&secondDeck) noexcept;
+        -:   45:
+        -:   46:        /*!
+        -:   47:         * delete playCards::Card deck
+        -:   48:         */
+function _ZN15playDeckDynamic4DeckD1Ev called 31 returned 100% blocks executed 100%
+       31:   49:        ~Deck(){delete[] deck;}
+       31:   49-block  0
+branch  0 taken 29 (fallthrough)
+branch  1 taken 2
+       29:   49-block  1
+call    2 returned 29
+        -:   50:
+        -:   51:        /*!
+        -:   52:         *
+        -:   53:         * @param rank rank of card which we will to look for in deck
+        -:   54:         * @param suit suit of card which we will to look for in deck
+        -:   55:         * @param currentSize size of deck in moment when this function is calling
+        -:   56:         * @returns true if card is found, false if isn't
+        -:   57:         */
+        -:   58:        bool checkAvailabilityCard(int rank, playCards::Card::suits suit, int currentSize); //есть ли карта в колоде
+        -:   59:
+        -:   60:        /*!
+        -:   61:         *
+        -:   62:         * @return deck(array) in type playCards:Card
+        -:   63:         */
+function _ZN15playDeckDynamic4Deck7getDeckEv called 2 returned 100% blocks executed 100%
+        2:   64:        playCards::Card *getDeck() {
+        2:   65:            return deck; //получить колоду типа *cards
+        2:   65-block  0
+        -:   66:        }
+        -:   67:
+        -:   68:        /*!
+        -:   69:         *
+        -:   70:         * @param count setter for field countCards
+        -:   71:         */
+        -:   72:        void setCountCards(int count);
+        -:   73:
+        -:   74:        /*!
+        -:   75:         * getter for countCards
+        -:   76:         * @returns countCards
+        -:   77:         */
+        -:   78:        [[nodiscard]] int getCountCards() const;
+        -:   79:
+        -:   80:        /*!
+        -:   81:         * adding random card in deck
+        -:   82:         */
+        -:   83:        void addRandomCard();
+        -:   84:
+        -:   85:        /*!
+        -:   86:         *
+        -:   87:         * @param rank add card in the deck with this rank
+        -:   88:         * @param suit add card in the deck with this wuit
+        -:   89:         */
+        -:   90:        void addCard(int rank, playCards::Card::suits suit);
+        -:   91:
+        -:   92:        /*!
+        -:   93:         *
+        -:   94:         * @param number delete card with this number
+        -:   95:         * @throws std::invalid_argument if (number < 0 || number >= countCards || countCards <= 0)
+        -:   96:         */
+        -:   97:        void deleteCard(int number);
+        -:   98:
+        -:   99:        /*!
+        -:  100:         * arranging of the deck
+        -:  101:         */
+        -:  102:        void arrangingDeck();
+        -:  103:
+        -:  104:        /*!
+        -:  105:         *
+        -:  106:         * @param suit is suit of new deck
+        -:  107:         * @returns new deck with only one suit(in parameters)
+        -:  108:         */
+        -:  109:        Deck newDeckBySuit(playCards::Card::suits suit);
+        -:  110:
+        -:  111:        /*!
+        -:  112:         * mixing of the deck
+        -:  113:         */
+        -:  114:        void mixingDeck();
+        -:  115:
+        -:  116:        /*!
+        -:  117:         *
+        -:  118:         * @param secondDeck deck where card will go
+        -:  119:         * @throws std::invalid_argument if (secondDeck.countCards >= MAXDECKSIZE || countCards == 0))
+        -:  120:         */
+        -:  121:        void operator>>(Deck &secondDeck);
+        -:  122:
+        -:  123:        /*!
+        -:  124:         *
+        -:  125:         * @param index index of card of the deck
+        -:  126:         * @returns card from deck(from array of type playCards::Card)
+        -:  127:         * @throws std::invalid_argument if (index < 0 || index >= countCards)
+        -:  128:         */
+        -:  129:        playCards::Card &operator[](int index);
+        -:  130:
+        -:  131:        /*!
+        -:  132:         *
+        -:  133:         * @param index index of card of the deck
+        -:  134:         * @returns card from deck(from array of type playCards::Card)
+        -:  135:         * @throws std::invalid_argument if (index < 0 || index >= countCards)
+        -:  136:         */
+        -:  137:        const playCards::Card &operator[](int index) const;
+        -:  138:
+        -:  139:        /*!
+        -:  140:         *
+        -:  141:         * @param secondDeck is the second argument in sum operation
+        -:  142:         * @returns new deck which is sum of our object and secondDeck
+        -:  143:         * @throws std::invalid_argument if (countCards + secondDeck.countCards > MAXDECKSIZE)
+        -:  144:         */
+        -:  145:        Deck operator+(Deck const &secondDeck) const;
+        -:  146:
+        -:  147:        /*!
+        -:  148:         *
+        -:  149:         * @param outStream output values are written here
+        -:  150:         * @param deck1 object which we want to output
+        -:  151:         * @returns outStream - output stream
+        -:  152:         */
+        -:  153:        friend std::ostream &operator<<(std::ostream &outStream, const Deck &deck1);
+        -:  154:
+        -:  155:        /*!
+        -:  156:         *
+        -:  157:         * @param inStream input values are written here
+        -:  158:         * @param deck1 object which we want to input
+        -:  159:         * @returns inStream - input stream
+        -:  160:         * @throws std::invalid_argument if suit is wrong
+        -:  161:         */
+        -:  162:        friend std::istream &operator>>(std::istream &inStream, Deck &deck1);
+        -:  163:
+        -:  164:        /*!
+        -:  165:         *
+        -:  166:         * @param secondDeck deck from where we will copy our object by value
+        -:  167:         * @returns object (*this)
+        -:  168:         */
+        -:  169:        Deck &operator=(const Deck &secondDeck);
+        -:  170:
+        -:  171:        /*!
+        -:  172:         *
+        -:  173:         * @param secondDeck deck from where we will copy our object by address
+        -:  174:         * @returns object (*this)
+        -:  175:         */
+        -:  176:        Deck &operator=(Deck &&secondDeck) noexcept ;
+        -:  177:
+        -:  178:        /*!
+        -:  179:         *
+        -:  180:         * @returns this deck with new card
+        -:  181:         * @throws std::invalid_argument if (countCards >= MAXDECKSIZE)
+        -:  182:         */
+        -:  183:        Deck &operator++();
+        -:  184:
+        -:  185:        /*!
+        -:  186:         *
+        -:  187:         * @returns copy of this deck without new card
+        -:  188:         * @throws std::invalid_argument if (countCards >= MAXDECKSIZE)
+        -:  189:         */
+        -:  190:        Deck operator++(int);
+        -:  191:
+        -:  192:        /*!
+        -:  193:         *
+        -:  194:         * @param deck1 we will to plus it deck to our object
+        -:  195:         * @returns this deck(object)(this) with deck1
+        -:  196:         * @throws std::invalid_argument if (countCards + deck1.countCards > MAXDECKSIZE)
+        -:  197:         */
+        -:  198:        Deck operator+=(const Deck &deck1);
+        -:  199:
+        -:  200:    };
+        -:  201:}
+        -:  202:
+        -:  203:
+        -:  204:#endif

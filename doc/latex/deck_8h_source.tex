@@ -1,0 +1,86 @@
+\doxysection{deck.\+h}
+\hypertarget{deck_8h_source}{}\label{deck_8h_source}\index{CLionProjects/oop2/playDeckDynamic/deck.h@{CLionProjects/oop2/playDeckDynamic/deck.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../playCards/playCards.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ DECK\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ DECK\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }playDeckDynamic\{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ countCards;}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MAXDECKSIZE\ =\ 52;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ playCards::Card\ *deck;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ compare(\textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *b);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ createRandomDeck(\textcolor{keywordtype}{int}\ count);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ resize(\textcolor{keywordtype}{int}\ oldLength,\ \textcolor{keywordtype}{int}\ newLength);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ae9f8217f0d4275b312017f80252ae6af}{Deck}}(\textcolor{keywordtype}{int}\ count);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ae9f8217f0d4275b312017f80252ae6af}{Deck}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ae9f8217f0d4275b312017f80252ae6af}{Deck}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&secondDeck);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ae9f8217f0d4275b312017f80252ae6af}{Deck}}(\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&\&secondDeck)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_aeafafc357b8aaf0878443f4d9bd5e0ed}{\string~Deck}}()\{\textcolor{keyword}{delete}[]\ deck;\}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_a143e7cd34387aa84c994c1970cfbdbea}{checkAvailabilityCard}}(\textcolor{keywordtype}{int}\ rank,\ playCards::Card::suits\ suit,\ \textcolor{keywordtype}{int}\ currentSize);\ \textcolor{comment}{//есть\ ли\ карта\ в\ колоде}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ playCards::Card\ *\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ad2c66bba4a1f078a4c4236a43b105cb4}{getDeck}}()\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ deck;\ \textcolor{comment}{//получить\ колоду\ типа\ *cards}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_a82aa3ec7fc6d497d79851fb9fc46c0d5}{setCountCards}}(\textcolor{keywordtype}{int}\ count);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ae5fed941f6efdffef390162ee98c355c}{getCountCards}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_abb9595ddfbcf7e987190b555cef05629}{addRandomCard}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_a59b494af16b599886a8267b8e796adb9}{addCard}}(\textcolor{keywordtype}{int}\ rank,\ playCards::Card::suits\ suit);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_a2d016c27eee20b42d293cc86827d9da6}{deleteCard}}(\textcolor{keywordtype}{int}\ number);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_aecb197c6024205956a4c3a91d0392bd5}{arrangingDeck}}();}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ad8b2329fb927944bea381ec61316e2e9}{newDeckBySuit}}(playCards::Card::suits\ suit);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_aa8efc5a633020945c146197293d5e2cc}{mixingDeck}}();}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_aad41b953cf32b59c0ab8cdf5137a35cc}{operator>>}}(\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&secondDeck);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ playCards::Card\ \&\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_aedcdfc9197723b76f6a449eb74665a27}{operator[]}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ playCards::Card\ \&\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_aedcdfc9197723b76f6a449eb74665a27}{operator[]}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_a9afea76b87b25b530697bd932724de53}{operator+}}(\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \textcolor{keyword}{const}\ \&secondDeck)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ab24014cbe406e215c69d8d94f16cfb1f}{operator<<}}(std::ostream\ \&outStream,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&deck1);}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\ \&\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_aad41b953cf32b59c0ab8cdf5137a35cc}{operator>>}}(std::istream\ \&inStream,\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&deck1);}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_a218648d6a1e7d48c3ab8d6c6707c5240}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&secondDeck);}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_a218648d6a1e7d48c3ab8d6c6707c5240}{operator=}}(\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&\&secondDeck)\ noexcept\ ;}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&\mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ab51c8b47b1969f5d84a4e39510f1b1ea}{operator++}}();}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_ab51c8b47b1969f5d84a4e39510f1b1ea}{operator++}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck_a5c16a8674aa52dd25c9e4b9e170ea43c}{operator+=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classplay_deck_dynamic_1_1_deck}{Deck}}\ \&deck1);}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \ \ \ \ \};}
+\DoxyCodeLine{00201\ \}}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

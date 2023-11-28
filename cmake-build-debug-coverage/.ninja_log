@@ -1,0 +1,11 @@
+# ninja log v5
+4	577	7197937837538182	CMakeFiles/oop2.dir/main.cpp.obj	32278fd177d3a8c0
+20	704	7197937618150055	playDeckDynamic/CMakeFiles/playDeckDynamic.dir/__/playCards/playCards.cpp.obj	559188b41b11ff8a
+4	647	7197940769635344	playCards/CMakeFiles/playCards.dir/playCards.cpp.obj	eae0d563af209afa
+15	68	7197937832430822	playDeckDynamic/CMakeFiles/playDeckDynamic.dir/deck.cpp.obj	2a643935a381edb4
+12	62	7197937832380795	playDeckStatic/CMakeFiles/playDeckStatic.dir/deck.cpp.obj	6ab2e50a42a76cc4
+15	696	7197937618070044	playDeckStatic/CMakeFiles/playDeckStatic.dir/__/playCards/playCards.cpp.obj	6d41d254b530d28f
+647	726	7197940770434722	playCards/libplayCards.a	bcd61778ba3d8082
+68	135	7197937833110964	playDeckDynamic/libplayDeckDynamic.a	d18244908c9ef69f
+63	129	7197937833060952	playDeckStatic/libplayDeckStatic.a	2443d971d893cfe8
+726	841	7197940771544803	oop2.exe	4a3a37148f91603

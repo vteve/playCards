@@ -1,0 +1,17 @@
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/CMakeFiles/oop2.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playCards/CMakeFiles/playCards.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playCards/CMakeFiles/edit_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playCards/CMakeFiles/rebuild_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/tests/CMakeFiles/testPlayCards.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/tests/CMakeFiles/testPlayDeckDynamic.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/tests/CMakeFiles/testPlayDeckStatic.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/tests/CMakeFiles/edit_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/tests/CMakeFiles/rebuild_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playDeckStatic/CMakeFiles/playDeckStatic.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playDeckStatic/CMakeFiles/edit_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playDeckStatic/CMakeFiles/rebuild_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playDeckDynamic/CMakeFiles/playDeckDynamic.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playDeckDynamic/CMakeFiles/edit_cache.dir
+C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage/playDeckDynamic/CMakeFiles/rebuild_cache.dir

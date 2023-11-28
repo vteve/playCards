@@ -1,0 +1,1136 @@
+        -:    0:Source:C:/Users/Alexander/CLionProjects/oop2/playDeckDynamic/deck.cpp
+        -:    0:Graph:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug-coverage\playDeckDynamic\CMakeFiles\playDeckDynamic.dir\deck.cpp.gcno
+        -:    0:Data:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug-coverage\playDeckDynamic\CMakeFiles\playDeckDynamic.dir\deck.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include "../playCards/playCards.h"
+        -:    3:#include "deck.h"
+        -:    4:#include <cstdlib>
+        -:    5:
+        -:    6:namespace playDeckDynamic {
+        -:    7:
+        -:    8:
+function _ZN15playDeckDynamic4DeckC2Ei called 12 returned 100% blocks executed 56%
+       12:    9:    Deck::Deck(int count) {
+      12*:   10:        if (count < 0 || count > 52) throw std::invalid_argument("Count must be > 0 and < 52");
+       12:   10-block  0
+branch  0 taken 12 (fallthrough)
+branch  1 taken 0
+       12:   10-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 12
+    %%%%%:   10-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   10-block  3
+call    8 never executed
+    $$$$$:   10-block  4
+call    9 never executed
+       12:   11:        createRandomDeck(count);
+       12:   11-block  0
+call    0 returned 12
+       12:   12:        countCards = count;
+       12:   13:    }
+        -:   14:
+function _ZN15playDeckDynamic4Deck16createRandomDeckEi called 12 returned 100% blocks executed 90%
+       12:   15:    void Deck::createRandomDeck(int count) {
+       12:   16:        int currentSize = 0, i = 0, suit, rank;
+     310*:   17:        deck = new playCards::Card[count];
+       12:   17-block  0
+branch  0 taken 12 (fallthrough)
+branch  1 taken 0
+       12:   17-block  1
+    %%%%%:   17-block  2
+call    2 never executed
+       12:   17-block  3
+call    3 returned 12
+      298:   17-block  4
+call    4 returned 298
+branch  5 taken 298 (fallthrough)
+branch  6 taken 0 (throw)
+      298:   17-block  5
+      310:   17-block  6
+branch  7 taken 298
+branch  8 taken 12 (fallthrough)
+    $$$$$:   17-block  7
+call    9 never executed
+      642:   18:        while (i < count) {
+       12:   18-block  0
+      642:   18-block  1
+branch  0 taken 630
+branch  1 taken 12 (fallthrough)
+      630:   19:            if (!checkAvailabilityCard(rank = rand() % 13 + 2, suit = rand() % 4 + 1, currentSize)) {
+      630:   19-block  0
+call    0 returned 630
+call    1 returned 630
+call    2 returned 630
+branch  3 taken 298 (fallthrough)
+branch  4 taken 332
+      298:   20:                deck[i].setSuit(suit);
+      298:   20-block  0
+call    0 returned 298
+      298:   21:                deck[i].setRank(rank);
+call    0 returned 298
+      298:   22:                i++;
+      298:   23:                currentSize++;
+        -:   24:            }
+        -:   25:        }
+       12:   26:    }
+       12:   26-block  0
+        -:   27:
+function _ZN15playDeckDynamic4Deck21checkAvailabilityCardEiii called 630 returned 100% blocks executed 100%
+      630:   28:    bool Deck::checkAvailabilityCard(int rank, int suit, int currentSize) {
+    11542:   29:        for (int i = 0; i < currentSize; ++i) {
+      630:   29-block  0
+    10912:   29-block  1
+    11542:   29-block  2
+branch  0 taken 11244
+branch  1 taken 298 (fallthrough)
+    11244:   30:            if (deck[i].getSuit() == suit && deck[i].getRank() == rank) {
+    11244:   30-block  0
+call    0 returned 11244
+branch  1 taken 2908 (fallthrough)
+branch  2 taken 8336
+     2908:   30-block  1
+call    3 returned 2908
+branch  4 taken 332 (fallthrough)
+branch  5 taken 2576
+      332:   30-block  2
+    10912:   30-block  3
+    11244:   30-block  4
+branch  6 taken 332 (fallthrough)
+branch  7 taken 10912
+      332:   31:                return true;
+      332:   31-block  0
+        -:   32:            }
+        -:   33:        }
+      298:   34:        return false;
+      298:   34-block  0
+        -:   35:    }
+        -:   36:
+function _ZN15playDeckDynamic4DeckC2Ev called 6 returned 100% blocks executed 89%
+        6:   37:    Deck::Deck() {
+        6:   38:        countCards = 52;
+     318*:   39:        deck = new playCards::Card[countCards];
+        6:   39-block  0
+branch  0 taken 6 (fallthrough)
+branch  1 taken 0
+        6:   39-block  1
+    %%%%%:   39-block  2
+call    2 never executed
+        6:   39-block  3
+call    3 returned 6
+      312:   39-block  4
+call    4 returned 312
+branch  5 taken 312 (fallthrough)
+branch  6 taken 0 (throw)
+      312:   39-block  5
+      318:   39-block  6
+branch  7 taken 312
+branch  8 taken 6 (fallthrough)
+    $$$$$:   39-block  7
+call    9 never executed
+        6:   40:        int index = 0;
+       30:   41:        for (int i = 0; i < 4; ++i) {
+        6:   41-block  0
+       24:   41-block  1
+       30:   41-block  2
+branch  0 taken 24
+branch  1 taken 6 (fallthrough)
+      336:   42:            for (int j = 0; j < 13; ++j) {
+       24:   42-block  0
+      336:   42-block  1
+branch  0 taken 312
+branch  1 taken 24 (fallthrough)
+      312:   43:                deck[index].setRank(j + 2);
+      312:   43-block  0
+call    0 returned 312
+      312:   44:                deck[index].setSuit(i + 1);
+call    0 returned 312
+      312:   45:                index++;
+        -:   46:            }
+        -:   47:        }
+        6:   48:    }
+        6:   48-block  0
+        -:   49:
+        -:   50:    //копирующий
+function _ZN15playDeckDynamic4DeckC2ERKS0_ called 4 returned 100% blocks executed 87%
+        4:   51:    Deck::Deck(const Deck &secondDeck) {
+        4:   52:        countCards = secondDeck.countCards;
+     105*:   53:        deck = new playCards::Card[countCards];
+        4:   53-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 0
+        4:   53-block  1
+    %%%%%:   53-block  2
+call    2 never executed
+        4:   53-block  3
+call    3 returned 4
+      101:   53-block  4
+call    4 returned 101
+branch  5 taken 101 (fallthrough)
+branch  6 taken 0 (throw)
+      101:   53-block  5
+      105:   53-block  6
+branch  7 taken 101
+branch  8 taken 4 (fallthrough)
+    $$$$$:   53-block  7
+call    9 never executed
+      105:   54:        for (int i = 0; i < countCards; ++i) {
+        4:   54-block  0
+      105:   54-block  1
+branch  0 taken 101
+branch  1 taken 4 (fallthrough)
+      101:   55:            deck[i] = secondDeck[i];
+      101:   55-block  0
+call    0 returned 101
+        -:   56:        }
+        4:   57:    }
+        4:   57-block  0
+        -:   58:
+        -:   59:    //перемещающий
+function _ZN15playDeckDynamic4DeckC2EOS0_ called 1 returned 100% blocks executed 100%
+        1:   60:    Deck::Deck(Deck &&secondDeck)  noexcept {
+        1:   61:        countCards = secondDeck.countCards;
+        1:   62:        deck = secondDeck.deck;
+        1:   63:        secondDeck.deck = nullptr;
+        1:   64:        secondDeck.countCards = 0;
+        1:   65:    }
+        -:   66:
+function _ZN15playDeckDynamic4Deck13setCountCardsEi called 2 returned 100% blocks executed 100%
+        2:   67:    void Deck::setCountCards(int count) {
+        2:   68:        countCards = count;
+        2:   69:    }
+        -:   70:
+function _ZNK15playDeckDynamic4Deck13getCountCardsEv called 0 returned 0% blocks executed 0%
+    #####:   71:    int Deck::getCountCards() const {
+    #####:   72:        return countCards;
+    %%%%%:   72-block  0
+        -:   73:    }
+        -:   74:
+function _ZN15playDeckDynamic4Deck13addRandomCardEv called 3 returned 100% blocks executed 85%
+        3:   75:    void Deck::addRandomCard() {
+        3:   76:        if (countCards >= MAXDECKSIZE) {
+        3:   76-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:   77:            resize(countCards, countCards * 2);
+        1:   77-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   78:        }
+        3:   79:        playCards::Card card;
+        3:   79-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+     119*:   80:        auto *newDeck = new playCards::Card[countCards + 1];
+        3:   80-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:   80-block  1
+    %%%%%:   80-block  2
+call    2 never executed
+        3:   80-block  3
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   80-block  4
+      116:   80-block  5
+call    6 returned 116
+branch  7 taken 116 (fallthrough)
+branch  8 taken 0 (throw)
+      116:   80-block  6
+      119:   80-block  7
+branch  9 taken 116
+branch 10 taken 3 (fallthrough)
+    $$$$$:   80-block  8
+call   11 never executed
+      116:   81:        for (int i = 0; i < countCards; ++i) {
+        3:   81-block  0
+      116:   81-block  1
+branch  0 taken 113
+branch  1 taken 3 (fallthrough)
+      113:   82:            newDeck[i] = deck[i];
+      113:   82-block  0
+        -:   83:        }
+        3:   84:        delete[] deck;
+        3:   84-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:   84-block  1
+call    2 returned 3
+        3:   85:        newDeck[countCards++] = card;
+        3:   86:        deck = newDeck;
+        3:   87:    }
+        3:   87-block  0
+        -:   88:
+function _ZN15playDeckDynamic4Deck7addCardEii called 13 returned 100% blocks executed 80%
+       13:   89:    void Deck::addCard(int rank, int suit) {
+       13:   90:        if (countCards >= MAXDECKSIZE) {
+       13:   90-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 13
+    #####:   91:            resize(countCards, countCards * 2);
+    %%%%%:   91-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   92:        }
+       13:   93:        playCards::Card card(rank, suit);
+       13:   93-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+     104*:   94:        auto *newDeck = new playCards::Card[countCards + 1];
+       13:   94-block  0
+branch  0 taken 13 (fallthrough)
+branch  1 taken 0
+       13:   94-block  1
+    %%%%%:   94-block  2
+call    2 never executed
+       13:   94-block  3
+call    3 returned 13
+branch  4 taken 13 (fallthrough)
+branch  5 taken 0 (throw)
+       13:   94-block  4
+       91:   94-block  5
+call    6 returned 91
+branch  7 taken 91 (fallthrough)
+branch  8 taken 0 (throw)
+       91:   94-block  6
+      104:   94-block  7
+branch  9 taken 91
+branch 10 taken 13 (fallthrough)
+    $$$$$:   94-block  8
+call   11 never executed
+       91:   95:        for (int i = 0; i < countCards; ++i) {
+       13:   95-block  0
+       91:   95-block  1
+branch  0 taken 78
+branch  1 taken 13 (fallthrough)
+       78:   96:            newDeck[i] = deck[i];
+       78:   96-block  0
+        -:   97:        }
+        -:   98://        std::move(deck, sizeof(playCards::Card)*countCards, newDeck);
+       13:   99:        delete[] deck;
+       13:   99-block  0
+branch  0 taken 13 (fallthrough)
+branch  1 taken 0
+       13:   99-block  1
+call    2 returned 13
+       13:  100:        newDeck[countCards++] = card;
+       13:  101:        deck = newDeck;
+       13:  102:    }
+       13:  102-block  0
+        -:  103:
+function _ZN15playDeckDynamic4Deck10deleteCardEi called 1 returned 100% blocks executed 64%
+        1:  104:    void Deck::deleteCard(int number) {
+       1*:  105:        if (number < 0 || number >= countCards) throw std::invalid_argument("Wrong number!");
+        1:  105-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  105-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  105-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  105-block  3
+call    8 never executed
+    $$$$$:  105-block  4
+call    9 never executed
+       1*:  106:        if (countCards <= 0) throw std::invalid_argument("Deck is empty!");
+        1:  106-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  106-block  1
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  106-block  2
+call    6 never executed
+    $$$$$:  106-block  3
+call    7 never executed
+      53*:  107:        auto *newDeck = new playCards::Card[countCards - 1];
+        1:  107-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  107-block  1
+    %%%%%:  107-block  2
+call    2 never executed
+        1:  107-block  3
+call    3 returned 1
+       52:  107-block  4
+call    4 returned 52
+branch  5 taken 52 (fallthrough)
+branch  6 taken 0 (throw)
+       52:  107-block  5
+       53:  107-block  6
+branch  7 taken 52
+branch  8 taken 1 (fallthrough)
+    $$$$$:  107-block  7
+call    9 never executed
+       54:  108:        for (int i = 0; i < countCards; ++i) {
+        1:  108-block  0
+       53:  108-block  1
+       54:  108-block  2
+branch  0 taken 53
+branch  1 taken 1 (fallthrough)
+       53:  109:            if (i < number) {
+       53:  109-block  0
+branch  0 taken 20 (fallthrough)
+branch  1 taken 33
+       20:  110:                newDeck[i] = deck[i];
+       20:  110-block  0
+       33:  111:            } else if (i == number) {
+       33:  111-block  0
+branch  0 taken 32 (fallthrough)
+branch  1 taken 1
+        -:  112:
+        -:  113:            } else {
+       32:  114:                newDeck[i - 1] = deck[i];
+       32:  114-block  0
+        -:  115:            }
+        -:  116:        }
+        1:  117:        delete[] deck;
+        1:  117-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  117-block  1
+call    2 returned 1
+        1:  118:        deck = newDeck;
+        1:  119:        countCards--;
+        1:  120:    }
+        1:  120-block  0
+        -:  121:
+function _ZN15playDeckDynamic4Deck13arrangingDeckEv called 1 returned 100% blocks executed 100%
+        1:  122:    void Deck::arrangingDeck() {
+        1:  123:        qsort(deck, countCards, sizeof(playCards::Card), compare);
+        1:  123-block  0
+call    0 returned 1
+        1:  124:    }
+        -:  125:
+function _ZN15playDeckDynamic4Deck7compareEPKvS2_ called 338 returned 100% blocks executed 70%
+      338:  126:    int Deck::compare(const void *a, const void *b) {
+      338:  127:        const auto *r1 = static_cast<const playCards::Card *>(a);
+      338:  128:        const auto *r2 = static_cast<const playCards::Card *>(b);
+      338:  129:        if (r1->getSuit() > r2->getSuit()) {
+      338:  129-block  0
+call    0 returned 338
+call    1 returned 338
+branch  2 taken 60 (fallthrough)
+branch  3 taken 278
+       60:  130:            return 1;
+       60:  130-block  0
+      278:  131:        } else if (r1->getSuit() < r2->getSuit()) {
+      278:  131-block  0
+call    0 returned 278
+call    1 returned 278
+branch  2 taken 86 (fallthrough)
+branch  3 taken 192
+       86:  132:            return -1;
+       86:  132-block  0
+      192:  133:        } else if (r1->getSuit() == r2->getSuit() && r1->getRank() > r2->getRank()) {
+      192:  133-block  0
+call    0 returned 192
+call    1 returned 192
+branch  2 taken 192 (fallthrough)
+branch  3 taken 0
+      192:  133-block  1
+call    4 returned 192
+call    5 returned 192
+branch  6 taken 90 (fallthrough)
+branch  7 taken 102
+       90:  133-block  2
+      102:  133-block  3
+      192:  133-block  4
+branch  8 taken 90 (fallthrough)
+branch  9 taken 102
+       90:  134:            return 1;
+       90:  134-block  0
+     102*:  135:        } else if (r1->getSuit() == r2->getSuit() && r1->getRank() < r2->getRank()) {
+      102:  135-block  0
+call    0 returned 102
+call    1 returned 102
+branch  2 taken 102 (fallthrough)
+branch  3 taken 0
+      102:  135-block  1
+call    4 returned 102
+call    5 returned 102
+branch  6 taken 102 (fallthrough)
+branch  7 taken 0
+      102:  135-block  2
+    %%%%%:  135-block  3
+      102:  135-block  4
+branch  8 taken 102 (fallthrough)
+branch  9 taken 0
+      102:  136:            return -1;
+      102:  136-block  0
+    #####:  137:        } else if (r1->getSuit() == r2->getSuit() && r1->getRank() == r2->getRank()) {
+    %%%%%:  137-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  137-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  137-block  2
+    %%%%%:  137-block  3
+    %%%%%:  137-block  4
+branch  8 never executed
+branch  9 never executed
+    #####:  138:            return 0;
+    %%%%%:  138-block  0
+        -:  139:        }
+    #####:  140:        return 0;
+    %%%%%:  140-block  0
+        -:  141:    }
+        -:  142:
+function _ZN15playDeckDynamic4Deck13newDeckBySuitEi called 1 returned 100% blocks executed 75%
+        1:  143:    Deck Deck::newDeckBySuit(int suit) {
+       1*:  144:        if (suit < 1 || suit > 4) throw std::invalid_argument("Wrong suit!");
+        1:  144-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  144-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  144-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  144-block  3
+call    8 never executed
+    $$$$$:  144-block  4
+call    9 never executed
+        1:  145:        Deck newDeck;
+        1:  145-block  0
+call    0 returned 1
+      53*:  146:        newDeck.deck = new playCards::Card[countCards];
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  146-block  0
+    %%%%%:  146-block  1
+call    2 never executed
+        1:  146-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  146-block  3
+       52:  146-block  4
+call    6 returned 52
+branch  7 taken 52 (fallthrough)
+branch  8 taken 0 (throw)
+       52:  146-block  5
+       53:  146-block  6
+branch  9 taken 52
+branch 10 taken 1 (fallthrough)
+    $$$$$:  146-block  7
+call   11 never executed
+        1:  147:        int countCardsNewDeck = 0;
+        1:  148:        newDeck.setCountCards(countCardsNewDeck);
+        1:  148-block  0
+call    0 returned 1
+       53:  149:        for (int i = 0; i < countCards; ++i) {
+       52:  149-block  0
+       53:  149-block  1
+branch  0 taken 52
+branch  1 taken 1 (fallthrough)
+       52:  150:            if (deck[i].getSuit() == suit) {
+       52:  150-block  0
+call    0 returned 52
+branch  1 taken 13 (fallthrough)
+branch  2 taken 39
+       13:  151:                newDeck.addCard(deck[i].getRank(), deck[i].getSuit());
+       13:  151-block  0
+call    0 returned 13
+call    1 returned 13
+call    2 returned 13
+branch  3 taken 13 (fallthrough)
+branch  4 taken 0 (throw)
+       13:  152:                countCardsNewDeck++;
+       13:  152-block  0
+        -:  153:            }
+        -:  154:        }
+      14*:  155:        auto *newCards = new playCards::Card[countCardsNewDeck];
+        1:  155-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  155-block  1
+    %%%%%:  155-block  2
+call    2 never executed
+        1:  155-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  155-block  4
+       13:  155-block  5
+call    6 returned 13
+branch  7 taken 13 (fallthrough)
+branch  8 taken 0 (throw)
+       13:  155-block  6
+       14:  155-block  7
+branch  9 taken 13
+branch 10 taken 1 (fallthrough)
+    $$$$$:  155-block  8
+call   11 never executed
+       14:  156:        for (int i = 0; i < countCardsNewDeck; ++i) {
+        1:  156-block  0
+       14:  156-block  1
+branch  0 taken 13
+branch  1 taken 1 (fallthrough)
+       13:  157:            newCards[i] = newDeck.deck[i];
+       13:  157-block  0
+        -:  158:        }
+        1:  159:        delete[] newDeck.deck;
+        1:  159-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  159-block  1
+call    2 returned 1
+        1:  160:        newDeck.deck = newCards;
+        1:  161:        newDeck.setCountCards(countCardsNewDeck);
+        1:  161-block  0
+call    0 returned 1
+        1:  162:        return newDeck;
+        1:  162-block  0
+    =====:  163:    }
+    $$$$$:  163-block  0
+call    0 never executed
+        -:  164:
+function _ZN15playDeckDynamic4swapERN9playCards4CardES2_ called 55 returned 100% blocks executed 100%
+       55:  165:    void swap(playCards::Card &card1, playCards::Card &card2) {
+       55:  166:        playCards::Card card3 = card2;
+       55:  167:        card2 = card1;
+       55:  168:        card1 = card3;
+       55:  169:    }
+        -:  170:
+function _ZN15playDeckDynamic4Deck10mixingDeckEv called 1 returned 100% blocks executed 100%
+        1:  171:    void Deck::mixingDeck() {
+       56:  172:        for (int i = 0; i < rand() % 100 + 50; ++i) {
+        1:  172-block  0
+       56:  172-block  1
+call    0 returned 56
+branch  1 taken 55
+branch  2 taken 1 (fallthrough)
+       55:  173:            swap(deck[rand() % countCards], deck[rand() % countCards]);
+       55:  173-block  0
+call    0 returned 55
+call    1 returned 55
+call    2 returned 55
+        -:  174:        }
+        1:  175:    }
+        -:  176:
+function _ZN15playDeckDynamiclsERSoRKNS_4DeckE called 28 returned 100% blocks executed 86%
+       28:  177:    std::ostream &operator<<(std::ostream &outStream, const Deck &deck1) {
+      822:  178:        for (int i = 0; i < deck1.countCards; ++i) {
+       28:  178-block  0
+      822:  178-block  1
+branch  0 taken 794
+branch  1 taken 28 (fallthrough)
+      794:  179:            outStream << deck1.deck[i].formatString() << " ";
+      794:  179-block  0
+call    0 returned 794
+call    1 returned 794
+branch  2 taken 794 (fallthrough)
+branch  3 taken 0 (throw)
+      794:  179-block  1
+call    4 returned 794
+branch  5 taken 794 (fallthrough)
+branch  6 taken 0 (throw)
+      794:  179-block  2
+call    7 returned 794
+    $$$$$:  179-block  3
+call    8 never executed
+        -:  180:        }
+       28:  181:        outStream << std::endl;
+       28:  181-block  0
+call    0 returned 28
+        -:  182:        outStream << "============================================================"
+       28:  183:                     "============================================================";
+call    0 returned 28
+       28:  184:        return outStream;
+       28:  184-block  0
+        -:  185:    }
+        -:  186:
+function _ZN15playDeckDynamicrsERSiRNS_4DeckE called 0 returned 0% blocks executed 0%
+    #####:  187:    std::istream &operator>>(std::istream &inStream, Deck &deck1) {
+    #####:  188:        std::cout << "Enter count of cards" << std::endl;
+    %%%%%:  188-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  188-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        -:  189:        int count;
+    #####:  190:        std::cin >> count;
+    %%%%%:  190-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  191:        deck1.countCards = count;
+    #####:  192:        for (int i = 0; i < count; ++i) {
+    %%%%%:  192-block  0
+    %%%%%:  192-block  1
+    %%%%%:  192-block  2
+branch  0 never executed
+branch  1 never executed
+    #####:  193:            inStream >> deck1[i];
+    %%%%%:  193-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  193-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        -:  194:        }
+    #####:  195:        return inStream;
+    %%%%%:  195-block  0
+    %%%%%:  195-block  1
+        -:  196:    }
+        -:  197:
+function _ZN15playDeckDynamic4DeckrsERS0_ called 1 returned 100% blocks executed 77%
+        1:  198:    void Deck::operator>>(Deck &secondDeck) {
+        1:  199:        if (secondDeck.countCards >= MAXDECKSIZE) {
+        1:  199-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+     105*:  200:            auto *newDeck = new playCards::Card[2 * secondDeck.countCards];
+        1:  200-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  200-block  1
+    %%%%%:  200-block  2
+call    2 never executed
+        1:  200-block  3
+call    3 returned 1
+      104:  200-block  4
+call    4 returned 104
+branch  5 taken 104 (fallthrough)
+branch  6 taken 0 (throw)
+      104:  200-block  5
+      105:  200-block  6
+branch  7 taken 104
+branch  8 taken 1 (fallthrough)
+    $$$$$:  200-block  7
+call    9 never executed
+       53:  201:            for (int i = 0; i < secondDeck.countCards; ++i) {
+        1:  201-block  0
+       53:  201-block  1
+branch  0 taken 52
+branch  1 taken 1 (fallthrough)
+       52:  202:                newDeck[i] = secondDeck[i];
+       52:  202-block  0
+call    0 returned 52
+        -:  203:            }
+        1:  204:            delete[] secondDeck.deck;
+        1:  204-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  204-block  1
+call    2 returned 1
+        1:  205:            secondDeck.deck = newDeck;
+        1:  205-block  0
+        -:  206:        }
+       1*:  207:        if (countCards == 0) throw std::invalid_argument("First deck is empty!");
+        1:  207-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  207-block  1
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  207-block  2
+call    6 never executed
+    $$$$$:  207-block  3
+call    7 never executed
+      54*:  208:        auto *newCards = new playCards::Card[secondDeck.countCards + 1];
+        1:  208-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  208-block  1
+    %%%%%:  208-block  2
+call    2 never executed
+        1:  208-block  3
+call    3 returned 1
+       53:  208-block  4
+call    4 returned 53
+branch  5 taken 53 (fallthrough)
+branch  6 taken 0 (throw)
+       53:  208-block  5
+       54:  208-block  6
+branch  7 taken 53
+branch  8 taken 1 (fallthrough)
+    $$$$$:  208-block  7
+call    9 never executed
+       53:  209:        for (int i = 0; i < secondDeck.countCards; ++i) {
+        1:  209-block  0
+       53:  209-block  1
+branch  0 taken 52
+branch  1 taken 1 (fallthrough)
+       52:  210:            newCards[i] = secondDeck[i];
+       52:  210-block  0
+call    0 returned 52
+        -:  211:        }
+        1:  212:        delete[] secondDeck.deck;
+        1:  212-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  212-block  1
+call    2 returned 1
+        1:  213:        newCards[secondDeck.countCards++] = deck[countCards - 1];
+        1:  214:        secondDeck.deck = newCards;
+      21*:  215:        auto *newDeck = new playCards::Card[countCards--];
+        1:  215-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  215-block  1
+    %%%%%:  215-block  2
+call    2 never executed
+        1:  215-block  3
+call    3 returned 1
+       20:  215-block  4
+call    4 returned 20
+branch  5 taken 20 (fallthrough)
+branch  6 taken 0 (throw)
+       20:  215-block  5
+       21:  215-block  6
+branch  7 taken 20
+branch  8 taken 1 (fallthrough)
+    $$$$$:  215-block  7
+call    9 never executed
+       20:  216:        for (int i = 0; i < countCards; ++i) {
+        1:  216-block  0
+       20:  216-block  1
+branch  0 taken 19
+branch  1 taken 1 (fallthrough)
+       19:  217:            newDeck[i] = deck[i];
+       19:  217-block  0
+        -:  218:        }
+        1:  219:        delete[] deck;
+        1:  219-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  219-block  1
+call    2 returned 1
+        1:  220:        deck = newDeck;
+        1:  221:    }
+        1:  221-block  0
+        -:  222:
+function _ZN15playDeckDynamic4DeckixEi called 104 returned 100% blocks executed 56%
+      104:  223:    playCards::Card &Deck::operator[](int index) {
+     104*:  224:        if (index < 0 || index >= countCards) throw std::invalid_argument("Wrong index!");
+      104:  224-block  0
+branch  0 taken 104 (fallthrough)
+branch  1 taken 0
+      104:  224-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 104
+    %%%%%:  224-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  224-block  3
+call    8 never executed
+    $$$$$:  224-block  4
+call    9 never executed
+      104:  225:        return deck[index];
+      104:  225-block  0
+      104:  225-block  1
+        -:  226:    }
+        -:  227:
+function _ZNK15playDeckDynamic4DeckixEi called 121 returned 100% blocks executed 56%
+      121:  228:    const playCards::Card &Deck::operator[](int index) const {
+     121*:  229:        if (index < 0 || index >= countCards) throw std::invalid_argument("Wrong index!");
+      121:  229-block  0
+branch  0 taken 121 (fallthrough)
+branch  1 taken 0
+      121:  229-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 121
+    %%%%%:  229-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  229-block  3
+call    8 never executed
+    $$$$$:  229-block  4
+call    9 never executed
+      121:  230:        return deck[index];
+      121:  230-block  0
+      121:  230-block  1
+        -:  231:    }
+        -:  232:
+function _ZNK15playDeckDynamic4DeckplERKS0_ called 1 returned 100% blocks executed 85%
+        1:  233:    Deck Deck::operator+(const Deck &secondDeck) const {
+        1:  234:        Deck newDeck;
+        1:  234-block  0
+call    0 returned 1
+        1:  235:        newDeck.countCards = countCards + secondDeck.countCards;
+      36*:  236:        newDeck.deck = new playCards::Card[newDeck.countCards];
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  236-block  0
+    %%%%%:  236-block  1
+call    2 never executed
+        1:  236-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  236-block  3
+       35:  236-block  4
+call    6 returned 35
+branch  7 taken 35 (fallthrough)
+branch  8 taken 0 (throw)
+       35:  236-block  5
+       36:  236-block  6
+branch  9 taken 35
+branch 10 taken 1 (fallthrough)
+    $$$$$:  236-block  7
+call   11 never executed
+       36:  237:        for (int i = 0; i < newDeck.countCards; i++) {
+        1:  237-block  0
+       35:  237-block  1
+       36:  237-block  2
+branch  0 taken 35
+branch  1 taken 1 (fallthrough)
+       35:  238:            if (i < countCards) {
+       35:  238-block  0
+branch  0 taken 20 (fallthrough)
+branch  1 taken 15
+       20:  239:                newDeck.deck[i].setRank(deck[i].getRank());
+       20:  239-block  0
+call    0 returned 20
+call    1 returned 20
+branch  2 taken 20 (fallthrough)
+branch  3 taken 0 (throw)
+       20:  240:                newDeck.deck[i].setSuit(deck[i].getSuit());
+       20:  240-block  0
+call    0 returned 20
+call    1 returned 20
+branch  2 taken 20 (fallthrough)
+branch  3 taken 0 (throw)
+        -:  241:            } else {
+       15:  242:                newDeck.deck[i].setRank(secondDeck.deck[i - countCards].getRank());
+       15:  242-block  0
+call    0 returned 15
+call    1 returned 15
+branch  2 taken 15 (fallthrough)
+branch  3 taken 0 (throw)
+       15:  243:                newDeck.deck[i].setSuit(secondDeck.deck[i - countCards].getSuit());
+       15:  243-block  0
+call    0 returned 15
+call    1 returned 15
+branch  2 taken 15 (fallthrough)
+branch  3 taken 0 (throw)
+        -:  244:            }
+        -:  245:        }
+        1:  246:        return newDeck;
+        1:  246-block  0
+        1:  246-block  1
+    =====:  247:    }
+    $$$$$:  247-block  0
+call    0 never executed
+        -:  248:
+function _ZN15playDeckDynamic4DeckaSERKS0_ called 0 returned 0% blocks executed 0%
+    #####:  249:    Deck &Deck::operator=(const Deck &secondDeck) {
+    #####:  250:        if (this != &secondDeck) {
+    %%%%%:  250-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  251:            countCards = secondDeck.countCards;
+    #####:  252:            for (int i = 0; i < countCards; ++i) {
+    %%%%%:  252-block  0
+    %%%%%:  252-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:  253:                deck[i].setRank(secondDeck[i].getRank());
+    %%%%%:  253-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:  254:                deck[i].setSuit(secondDeck[i].getSuit());
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:  255:            }
+        -:  256:        }
+    #####:  257:        return *this;
+    %%%%%:  257-block  0
+        -:  258:    }
+        -:  259:
+        -:  260:    //перемещающий
+function _ZN15playDeckDynamic4DeckaSEOS0_ called 1 returned 100% blocks executed 100%
+        1:  261:    Deck &Deck::operator=(Deck &&secondDeck)  noexcept {
+        1:  262:        if (this != &secondDeck){
+        1:  262-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  263:            countCards = secondDeck.countCards;
+        1:  264:            delete[] deck;
+        1:  264-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  264-block  1
+call    2 returned 1
+        1:  265:            deck = secondDeck.deck;
+        1:  266:            secondDeck.deck = nullptr;
+        1:  267:            secondDeck.countCards = 0;
+        1:  267-block  0
+        -:  268:        }
+        1:  269:        return *this;
+        1:  269-block  0
+        -:  270:    }
+        -:  271:
+function _ZN15playDeckDynamic4DeckppEv called 1 returned 100% blocks executed 80%
+        1:  272:    Deck &Deck::operator++() {
+        1:  273:        if (countCards >= MAXDECKSIZE) {
+        1:  273-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  274:            resize(countCards, countCards + 1);
+    %%%%%:  274-block  0
+call    0 never executed
+        -:  275:        }
+        1:  276:        this->addRandomCard();
+        1:  276-block  0
+call    0 returned 1
+        1:  277:        return *this;
+        -:  278:    }
+        -:  279:
+function _ZN15playDeckDynamic4DeckppEi called 1 returned 100% blocks executed 80%
+        1:  280:    Deck Deck::operator++(int) {
+        1:  281:        if (countCards >= MAXDECKSIZE) {
+        1:  281-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  282:            resize(countCards, countCards + 1);
+    %%%%%:  282-block  0
+call    0 never executed
+        -:  283:        }
+        1:  284:        this->addRandomCard();
+        1:  284-block  0
+call    0 returned 1
+        1:  285:        return *this;
+call    0 returned 1
+        -:  286:    }
+        -:  287:
+function _ZN15playDeckDynamic4DeckpLERKS0_ called 1 returned 100% blocks executed 92%
+        1:  288:    Deck Deck::operator+=(const Deck &deck1) {
+        1:  289:        int count = countCards;
+      26*:  290:        auto *newDeck = new playCards::Card[count + deck1.countCards];
+        1:  290-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  290-block  1
+    %%%%%:  290-block  2
+call    2 never executed
+        1:  290-block  3
+call    3 returned 1
+       25:  290-block  4
+call    4 returned 25
+branch  5 taken 25 (fallthrough)
+branch  6 taken 0 (throw)
+       25:  290-block  5
+       26:  290-block  6
+branch  7 taken 25
+branch  8 taken 1 (fallthrough)
+    $$$$$:  290-block  7
+call    9 never executed
+       16:  291:        for (int i = 0; i < count; ++i) {
+        1:  291-block  0
+       16:  291-block  1
+branch  0 taken 15
+branch  1 taken 1 (fallthrough)
+       15:  292:            newDeck[i] = deck[i];
+       15:  292-block  0
+        -:  293:        }
+        1:  294:        delete[] deck;
+        1:  294-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  294-block  1
+call    2 returned 1
+       11:  295:        for (int i = count; i < count + deck1.countCards; ++i) {
+        1:  295-block  0
+       11:  295-block  1
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+       10:  296:            newDeck[i].setRank(deck1[i - count].getRank());
+       10:  296-block  0
+call    0 returned 10
+call    1 returned 10
+call    2 returned 10
+       10:  297:            newDeck[i].setSuit(deck1[i - count].getSuit());
+call    0 returned 10
+call    1 returned 10
+call    2 returned 10
+        -:  298:        }
+        1:  299:        countCards = count + deck1.countCards;
+        1:  300:        deck = newDeck;
+        1:  301:        return *this;
+        1:  301-block  0
+call    0 returned 1
+        -:  302:    }
+        -:  303:
+function _ZN15playDeckDynamic4Deck6resizeEii called 1 returned 100% blocks executed 88%
+        1:  304:    void Deck::resize(int oldLength, int newLength) {
+     105*:  305:        auto *newDeck = new playCards::Card[newLength];
+        1:  305-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  305-block  1
+    %%%%%:  305-block  2
+call    2 never executed
+        1:  305-block  3
+call    3 returned 1
+      104:  305-block  4
+call    4 returned 104
+branch  5 taken 104 (fallthrough)
+branch  6 taken 0 (throw)
+      104:  305-block  5
+      105:  305-block  6
+branch  7 taken 104
+branch  8 taken 1 (fallthrough)
+    $$$$$:  305-block  7
+call    9 never executed
+       53:  306:        for (int i = 0; i < oldLength; ++i) {
+        1:  306-block  0
+       53:  306-block  1
+branch  0 taken 52
+branch  1 taken 1 (fallthrough)
+       52:  307:            newDeck[i] = deck[i];
+       52:  307-block  0
+        -:  308:        }
+        1:  309:        delete[] deck;
+        1:  309-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  309-block  1
+call    2 returned 1
+        1:  310:        deck = newDeck;
+        1:  311:    }
+        1:  311-block  0
+        -:  312:
+        -:  313:
+        -:  314:
+        -:  315:}
+        -:  316:
+        -:  317:

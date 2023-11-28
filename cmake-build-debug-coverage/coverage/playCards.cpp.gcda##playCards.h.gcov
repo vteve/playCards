@@ -1,0 +1,49 @@
+        -:    0:Source:C:/Users/Alexander/CLionProjects/oop2/playCards/playCards.h
+        -:    0:Graph:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug-coverage\playDeckDynamic\CMakeFiles\playDeckDynamic.dir\__\playCards\playCards.cpp.gcno
+        -:    0:Data:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug-coverage\playDeckDynamic\CMakeFiles\playDeckDynamic.dir\__\playCards\playCards.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:
+        -:    3:#ifndef PLAYCARDS_H
+        -:    4:#define PLAYCARDS_H
+        -:    5:
+        -:    6:namespace playCards {
+        -:    7:    class Card {
+        -:    8:    private:
+        -:    9:        int rank;
+        -:   10:        int suit;
+        -:   11:    public:
+        -:   12:        Card(int rank, int suit);
+        -:   13:
+        -:   14:        explicit Card();
+        -:   15:
+function _ZNK9playCards4Card7getRankEv called 0 returned 0% blocks executed 0%
+    #####:   16:        [[nodiscard]] int getRank() const { return rank; }
+    %%%%%:   16-block  0
+        -:   17:
+function _ZNK9playCards4Card7getSuitEv called 0 returned 0% blocks executed 0%
+    #####:   18:        [[nodiscard]] int getSuit() const { return suit; }
+    %%%%%:   18-block  0
+        -:   19:
+        -:   20:        Card &setRank(int rank);
+        -:   21:
+        -:   22:        Card &setSuit(int suit);
+        -:   23:
+        -:   24:        [[nodiscard]] std::string formatString() const;
+        -:   25:
+        -:   26://        std::ostream &print(std::ostream &outStream) const;
+        -:   27:
+        -:   28:        friend std::ostream &operator<<(std::ostream &outStream, const Card &card);
+        -:   29:        friend std::istream &operator>>(std::istream &inStream, Card &card);
+        -:   30:
+        -:   31://        std::ostream &operator<<(std::ostream &os) const;
+        -:   32:
+        -:   33:        std::strong_ordering operator<=>(const Card &secondCard) const;
+        -:   34:
+        -:   35:        bool operator==(const Card &rhs) const;
+        -:   36:        Card &operator!();
+        -:   37:
+        -:   38:    };
+        -:   39:}
+        -:   40:
+        -:   41:#endif

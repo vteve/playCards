@@ -1,0 +1,70 @@
+        -:    0:Source:C:/Users/Alexander/CLionProjects/oop2/playDeckDynamic/deck.h
+        -:    0:Graph:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug-coverage\CMakeFiles\oop2.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug-coverage\CMakeFiles\oop2.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include "../playCards/playCards.h"
+        -:    3:
+        -:    4:#ifndef DECK_H
+        -:    5:#define DECK_H
+        -:    6:
+        -:    7:namespace playDeckDynamic{
+        -:    8:    class Deck{
+        -:    9:    private:
+        -:   10:        int countCards;
+        -:   11:        static const int MAXDECKSIZE = 52;
+        -:   12:        playCards::Card *deck;
+        -:   13:
+        -:   14:        static int compare(const void *a, const void *b);
+        -:   15:
+        -:   16:        void createRandomDeck(int count);
+        -:   17:
+        -:   18:        void resize(int oldLength, int newLength);
+        -:   19:
+        -:   20:    public:
+        -:   21:        explicit Deck(int count);   //конструктор с count рандомными картами
+        -:   22:        Deck(); //полная колода(52 карты)
+        -:   23:        Deck(const Deck &secondDeck);
+        -:   24:        Deck(Deck &&secondDeck) noexcept;
+        -:   25:
+function _ZN15playDeckDynamic4DeckD1Ev called 23 returned 100% blocks executed 100%
+       23:   26:        ~Deck(){delete[] deck;}
+       23:   26-block  0
+branch  0 taken 21 (fallthrough)
+branch  1 taken 2
+       21:   26-block  1
+call    2 returned 21
+        -:   27:
+        -:   28:        bool checkAvailabilityCard(int rank, int suit, int currentSize); //есть ли карта в колоде
+        -:   29:
+        -:   30:        playCards::Card *getDeck() {
+        -:   31:            return deck; //получить колоду типа *cards
+        -:   32:        }
+        -:   33:
+        -:   34:        void setCountCards(int count); //сеттер для countCards
+        -:   35:        [[nodiscard]] int getCountCards() const; //геттер для countCards
+        -:   36:
+        -:   37:        void addRandomCard(); //добавить рандомную карту в колоду
+        -:   38:        void addCard(int rank, int suit); //добавить не рандомную карту в колоду
+        -:   39:        void deleteCard(int number); //удалить карту по номеру
+        -:   40:        void arrangingDeck();//упорядочивание по масти и рангу
+        -:   41:        Deck newDeckBySuit(int suit); //из колоды получается новая колода с одной мастью
+        -:   42:        void mixingDeck(); //перемешивание колоды
+        -:   43:
+        -:   44:        void operator>>(Deck &secondDeck); //карта из одной колоды уходит в другую
+        -:   45:        playCards::Card &operator[](int index); //получение карты по номеру
+        -:   46:        const playCards::Card &operator[](int index) const; //получение карты по номеру, если const
+        -:   47:        Deck operator+(Deck const &secondDeck) const;//сложение двух колод в одну
+        -:   48:        friend std::ostream &operator<<(std::ostream &outStream, const Deck &deck1);//вывод колоды
+        -:   49:        friend std::istream &operator>>(std::istream &inStream, Deck &deck1); //ввод колоды
+        -:   50:        Deck &operator=(const Deck &secondDeck); // приравнивание колод (по значениям, а не по ссылке)
+        -:   51:        Deck &operator=(Deck &&secondDeck) noexcept ; // приравнивание колод (по значениям, а не по ссылке)
+        -:   52:        Deck &operator++();
+        -:   53:        Deck operator++(int);
+        -:   54:        Deck operator+=(const Deck &deck1);
+        -:   55:
+        -:   56:    };
+        -:   57:}
+        -:   58:
+        -:   59:
+        -:   60:#endif

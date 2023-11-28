@@ -1,0 +1,378 @@
+\doxysection{play\+Deck\+Static\+::Deck Class Reference}
+\hypertarget{classplay_deck_static_1_1_deck}{}\label{classplay_deck_static_1_1_deck}\index{playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplay_deck_static_1_1_deck_aeb5b221fddd16ae19b238b51465a9e46}{Deck}} (int count)
+\item 
+\mbox{\hyperlink{classplay_deck_static_1_1_deck_a257ab13477ac7d57526592904de1a270}{Deck}} ()
+\item 
+bool \mbox{\hyperlink{classplay_deck_static_1_1_deck_aada3302bf2284cf722f8225816b8a3d1}{check\+Availability\+Card}} (int rank, play\+Cards\+::\+Card\+::suits suit, int current\+Size)
+\item 
+\mbox{\hyperlink{classplay_cards_1_1_card}{play\+Cards\+::\+Card}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classplay_deck_static_1_1_deck_a36471004cd79c6e2d1a6ac2f5b1b1e96}{get\+Deck}} ()
+\item 
+void \mbox{\hyperlink{classplay_deck_static_1_1_deck_a320a771e6b28ec2e6b3dd4dd7b588abc}{set\+Count\+Cards}} (int count)
+\item 
+int \mbox{\hyperlink{classplay_deck_static_1_1_deck_a3e0b78c1fff3718bae9962f3f92733a7}{get\+Count\+Cards}} () const
+\item 
+void \mbox{\hyperlink{classplay_deck_static_1_1_deck_a6ef9bfd57e904f160d0da6b2e9d09d12}{add\+Random\+Card}} ()
+\item 
+void \mbox{\hyperlink{classplay_deck_static_1_1_deck_a7d448522de0374aec10b84ddd530a7df}{add\+Card}} (int rank, play\+Cards\+::\+Card\+::suits suit)
+\item 
+void \mbox{\hyperlink{classplay_deck_static_1_1_deck_abca486b34b3941360dd73c6e3f839985}{delete\+Card}} (int number)
+\item 
+void \mbox{\hyperlink{classplay_deck_static_1_1_deck_aca16b76be89ee37f6df149617fb4d271}{arranging\+Deck}} ()
+\item 
+\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \mbox{\hyperlink{classplay_deck_static_1_1_deck_a1f362e6b6d8fc3d8ac8827e82613ae74}{new\+Deck\+By\+Suit}} (play\+Cards\+::\+Card\+::suits suit)
+\item 
+void \mbox{\hyperlink{classplay_deck_static_1_1_deck_a6db4b161563e4a27484b8ba7258dd32e}{mixing\+Deck}} ()
+\item 
+void \mbox{\hyperlink{classplay_deck_static_1_1_deck_a3045c08e05b34ed355a9bb154b3d5c57}{operator$>$$>$}} (\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&second\+Deck)
+\item 
+\mbox{\hyperlink{classplay_cards_1_1_card}{play\+Cards\+::\+Card}} \& \mbox{\hyperlink{classplay_deck_static_1_1_deck_af9034a56eac06c176887e3347d5488d4}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\item 
+const \mbox{\hyperlink{classplay_cards_1_1_card}{play\+Cards\+::\+Card}} \& \mbox{\hyperlink{classplay_deck_static_1_1_deck_a6797be31e167ddbce47e5bd69310a531}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\item 
+\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \mbox{\hyperlink{classplay_deck_static_1_1_deck_a8b64b50688203d6e7a0928c92cfaebda}{operator+}} (\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} const \&second\+Deck) const
+\item 
+\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \& \mbox{\hyperlink{classplay_deck_static_1_1_deck_add449fc751320c7e9fbaf0b6fd259b17}{operator=}} (const \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&second\+Deck)
+\item 
+\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \& \mbox{\hyperlink{classplay_deck_static_1_1_deck_a841ecc71bddd7de924c93124b6048a48}{operator++}} ()
+\item 
+\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \mbox{\hyperlink{classplay_deck_static_1_1_deck_a610ea12fbbd7ecaa65a75d5d5b63d5cd}{operator++}} (int)
+\item 
+\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \& \mbox{\hyperlink{classplay_deck_static_1_1_deck_a5626139da0d30540c6045b1edce060c7}{operator+=}} (const \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&deck1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classplay_deck_static_1_1_deck_ab24014cbe406e215c69d8d94f16cfb1f}{operator$<$$<$}} (std\+::ostream \&out\+Stream, const \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&deck1)
+\item 
+std\+::istream \& \mbox{\hyperlink{classplay_deck_static_1_1_deck_aad41b953cf32b59c0ab8cdf5137a35cc}{operator$>$$>$}} (std\+::istream \&in\+Stream, \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&deck1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classplay_deck_static_1_1_deck_aeb5b221fddd16ae19b238b51465a9e46}\label{classplay_deck_static_1_1_deck_aeb5b221fddd16ae19b238b51465a9e46} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{Deck()}{Deck()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily play\+Deck\+Static\+::\+Deck\+::\+Deck (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & create deck with this count of cards \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (count \texorpdfstring{$<$}{<} 0 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} count \texorpdfstring{$>$}{>}= MAXDECKSIZE) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_a257ab13477ac7d57526592904de1a270}\label{classplay_deck_static_1_1_deck_a257ab13477ac7d57526592904de1a270} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{Deck()}{Deck()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily play\+Deck\+Static\+::\+Deck\+::\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+create deck with 52 cards sorted by rank and suit 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classplay_deck_static_1_1_deck_a7d448522de0374aec10b84ddd530a7df}\label{classplay_deck_static_1_1_deck_a7d448522de0374aec10b84ddd530a7df} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!addCard@{addCard}}
+\index{addCard@{addCard}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{addCard()}{addCard()}}
+{\footnotesize\ttfamily void play\+Deck\+Static\+::\+Deck\+::add\+Card (\begin{DoxyParamCaption}\item[{int}]{rank,  }\item[{play\+Cards\+::\+Card\+::suits}]{suit }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank} & add card in the deck with this rank \\
+\hline
+{\em suit} & add card in the deck with this wuit \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if count\+Cards \texorpdfstring{$>$}{>}= MAXDECKSIZE \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_a6ef9bfd57e904f160d0da6b2e9d09d12}\label{classplay_deck_static_1_1_deck_a6ef9bfd57e904f160d0da6b2e9d09d12} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!addRandomCard@{addRandomCard}}
+\index{addRandomCard@{addRandomCard}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{addRandomCard()}{addRandomCard()}}
+{\footnotesize\ttfamily void play\+Deck\+Static\+::\+Deck\+::add\+Random\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+adding random card in deck 
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if count\+Cards \texorpdfstring{$>$}{>}= MAXDECKSIZE \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_aca16b76be89ee37f6df149617fb4d271}\label{classplay_deck_static_1_1_deck_aca16b76be89ee37f6df149617fb4d271} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!arrangingDeck@{arrangingDeck}}
+\index{arrangingDeck@{arrangingDeck}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{arrangingDeck()}{arrangingDeck()}}
+{\footnotesize\ttfamily void play\+Deck\+Static\+::\+Deck\+::arranging\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+arranging of the deck \Hypertarget{classplay_deck_static_1_1_deck_aada3302bf2284cf722f8225816b8a3d1}\label{classplay_deck_static_1_1_deck_aada3302bf2284cf722f8225816b8a3d1} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!checkAvailabilityCard@{checkAvailabilityCard}}
+\index{checkAvailabilityCard@{checkAvailabilityCard}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{checkAvailabilityCard()}{checkAvailabilityCard()}}
+{\footnotesize\ttfamily bool play\+Deck\+Static\+::\+Deck\+::check\+Availability\+Card (\begin{DoxyParamCaption}\item[{int}]{rank,  }\item[{play\+Cards\+::\+Card\+::suits}]{suit,  }\item[{int}]{current\+Size }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank} & rank of card which we will to look for in deck \\
+\hline
+{\em suit} & suit of card which we will to look for in deck \\
+\hline
+{\em current\+Size} & size of deck in moment when this function is calling \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if card is found, false if isn\textquotesingle{}t 
+\end{DoxyReturn}
+\Hypertarget{classplay_deck_static_1_1_deck_abca486b34b3941360dd73c6e3f839985}\label{classplay_deck_static_1_1_deck_abca486b34b3941360dd73c6e3f839985} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!deleteCard@{deleteCard}}
+\index{deleteCard@{deleteCard}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{deleteCard()}{deleteCard()}}
+{\footnotesize\ttfamily void play\+Deck\+Static\+::\+Deck\+::delete\+Card (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & delete card with this number \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (number \texorpdfstring{$<$}{<} 0 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} number \texorpdfstring{$>$}{>}= count\+Cards \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} count\+Cards \texorpdfstring{$<$}{<}= 0) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_a3e0b78c1fff3718bae9962f3f92733a7}\label{classplay_deck_static_1_1_deck_a3e0b78c1fff3718bae9962f3f92733a7} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!getCountCards@{getCountCards}}
+\index{getCountCards@{getCountCards}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{getCountCards()}{getCountCards()}}
+{\footnotesize\ttfamily int play\+Deck\+Static\+::\+Deck\+::get\+Count\+Cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for count\+Cards \begin{DoxyReturn}{Returns}
+field count\+Cards 
+\end{DoxyReturn}
+\Hypertarget{classplay_deck_static_1_1_deck_a36471004cd79c6e2d1a6ac2f5b1b1e96}\label{classplay_deck_static_1_1_deck_a36471004cd79c6e2d1a6ac2f5b1b1e96} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!getDeck@{getDeck}}
+\index{getDeck@{getDeck}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{getDeck()}{getDeck()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_cards_1_1_card}{play\+Cards\+::\+Card}} \texorpdfstring{$\ast$}{*} play\+Deck\+Static\+::\+Deck\+::get\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+deck(array) in type play\+Cards\+:Card 
+\end{DoxyReturn}
+\Hypertarget{classplay_deck_static_1_1_deck_a6db4b161563e4a27484b8ba7258dd32e}\label{classplay_deck_static_1_1_deck_a6db4b161563e4a27484b8ba7258dd32e} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!mixingDeck@{mixingDeck}}
+\index{mixingDeck@{mixingDeck}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{mixingDeck()}{mixingDeck()}}
+{\footnotesize\ttfamily void play\+Deck\+Static\+::\+Deck\+::mixing\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+mixing of the deck \Hypertarget{classplay_deck_static_1_1_deck_a1f362e6b6d8fc3d8ac8827e82613ae74}\label{classplay_deck_static_1_1_deck_a1f362e6b6d8fc3d8ac8827e82613ae74} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!newDeckBySuit@{newDeckBySuit}}
+\index{newDeckBySuit@{newDeckBySuit}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{newDeckBySuit()}{newDeckBySuit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} play\+Deck\+Static\+::\+Deck\+::new\+Deck\+By\+Suit (\begin{DoxyParamCaption}\item[{play\+Cards\+::\+Card\+::suits}]{suit }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em suit} & is suit of new deck \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new deck with only one suit(in parameters) 
+\end{DoxyReturn}
+\Hypertarget{classplay_deck_static_1_1_deck_a8b64b50688203d6e7a0928c92cfaebda}\label{classplay_deck_static_1_1_deck_a8b64b50688203d6e7a0928c92cfaebda} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator+@{operator+}}
+\index{operator+@{operator+}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} play\+Deck\+Static\+::\+Deck\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} const \&}]{second\+Deck }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em second\+Deck} & is the second argument in sum operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new deck which is sum of our object and second\+Deck 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (count\+Cards + second\+Deck.\+count\+Cards \texorpdfstring{$>$}{>} MAXDECKSIZE) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_a841ecc71bddd7de924c93124b6048a48}\label{classplay_deck_static_1_1_deck_a841ecc71bddd7de924c93124b6048a48} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator++@{operator++}}
+\index{operator++@{operator++}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \& play\+Deck\+Static\+::\+Deck\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+this deck with new card 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (count\+Cards \texorpdfstring{$>$}{>}= MAXDECKSIZE) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_a610ea12fbbd7ecaa65a75d5d5b63d5cd}\label{classplay_deck_static_1_1_deck_a610ea12fbbd7ecaa65a75d5d5b63d5cd} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator++@{operator++}}
+\index{operator++@{operator++}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} play\+Deck\+Static\+::\+Deck\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+copy of this deck without new card 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (count\+Cards \texorpdfstring{$>$}{>}= MAXDECKSIZE) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_a5626139da0d30540c6045b1edce060c7}\label{classplay_deck_static_1_1_deck_a5626139da0d30540c6045b1edce060c7} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \& play\+Deck\+Static\+::\+Deck\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&}]{deck1 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck1} & we will to plus it deck to our object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this deck(object)(this) with deck1 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (count\+Cards + deck1.\+count\+Cards \texorpdfstring{$>$}{>} MAXDECKSIZE) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_add449fc751320c7e9fbaf0b6fd259b17}\label{classplay_deck_static_1_1_deck_add449fc751320c7e9fbaf0b6fd259b17} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator=@{operator=}}
+\index{operator=@{operator=}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \& play\+Deck\+Static\+::\+Deck\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&}]{second\+Deck }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em second\+Deck} & deck from where we will copy our object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object (\texorpdfstring{$\ast$}{*}this) 
+\end{DoxyReturn}
+\Hypertarget{classplay_deck_static_1_1_deck_a3045c08e05b34ed355a9bb154b3d5c57}\label{classplay_deck_static_1_1_deck_a3045c08e05b34ed355a9bb154b3d5c57} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily void play\+Deck\+Static\+::\+Deck\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&}]{second\+Deck }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em second\+Deck} & deck where card will go \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (second\+Deck.\+count\+Cards \texorpdfstring{$>$}{>}= MAXDECKSIZE \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} count\+Cards == 0)) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_af9034a56eac06c176887e3347d5488d4}\label{classplay_deck_static_1_1_deck_af9034a56eac06c176887e3347d5488d4} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplay_cards_1_1_card}{play\+Cards\+::\+Card}} \& play\+Deck\+Static\+::\+Deck\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & index of card of the deck \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+card from deck(from array of type play\+Cards\+::\+Card) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (index \texorpdfstring{$<$}{<} 0 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} index \texorpdfstring{$>$}{>}= count\+Cards) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_a6797be31e167ddbce47e5bd69310a531}\label{classplay_deck_static_1_1_deck_a6797be31e167ddbce47e5bd69310a531} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classplay_cards_1_1_card}{play\+Cards\+::\+Card}} \& play\+Deck\+Static\+::\+Deck\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & index of card of the deck \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+card from deck(from array of type play\+Cards\+::\+Card) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if (index \texorpdfstring{$<$}{<} 0 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} index \texorpdfstring{$>$}{>}= count\+Cards) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classplay_deck_static_1_1_deck_a320a771e6b28ec2e6b3dd4dd7b588abc}\label{classplay_deck_static_1_1_deck_a320a771e6b28ec2e6b3dd4dd7b588abc} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!setCountCards@{setCountCards}}
+\index{setCountCards@{setCountCards}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{setCountCards()}{setCountCards()}}
+{\footnotesize\ttfamily void play\+Deck\+Static\+::\+Deck\+::set\+Count\+Cards (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & setter for field count\+Cards \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classplay_deck_static_1_1_deck_ab24014cbe406e215c69d8d94f16cfb1f}\label{classplay_deck_static_1_1_deck_ab24014cbe406e215c69d8d94f16cfb1f} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out\+Stream,  }\item[{const \mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&}]{deck1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & output values are written here \\
+\hline
+{\em deck1} & object which we want to output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+out\+Stream -\/ output stream 
+\end{DoxyReturn}
+\Hypertarget{classplay_deck_static_1_1_deck_aad41b953cf32b59c0ab8cdf5137a35cc}\label{classplay_deck_static_1_1_deck_aad41b953cf32b59c0ab8cdf5137a35cc} 
+\index{playDeckStatic::Deck@{playDeckStatic::Deck}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!playDeckStatic::Deck@{playDeckStatic::Deck}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in\+Stream,  }\item[{\mbox{\hyperlink{classplay_deck_static_1_1_deck}{Deck}} \&}]{deck1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Stream} & input values are written here \\
+\hline
+{\em deck1} & object which we want to input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+in\+Stream -\/ input stream 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if suit is wrong \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+CLion\+Projects/oop2/play\+Deck\+Static/deck.\+h\item 
+CLion\+Projects/oop2/play\+Deck\+Static/deck.\+cpp\end{DoxyCompactItemize}

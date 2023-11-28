@@ -1,0 +1,55 @@
+\doxysection{play\+Cards.\+h}
+\hypertarget{play_cards_8h_source}{}\label{play_cards_8h_source}\index{CLionProjects/oop2/playCards/playCards.h@{CLionProjects/oop2/playCards/playCards.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifndef\ PLAYCARDS\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ PLAYCARDS\_H}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }playCards\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classplay_cards_1_1_card}{Card}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ suits\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ diamonds,\ hears,\ clubs,\ spades}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rank;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ suits\ suit;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MINRANK\ =\ 2,\ MAXRANK\ =\ 14;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ arrRank[];}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ arrSuit[];}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}(\textcolor{keywordtype}{int}\ rank,\ suits\ suit1);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classplay_cards_1_1_card_ae7ef7dae832a6c33f7121009d681dda4}{getRank}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ rank;\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ [[nodiscard]]\ suits\ \mbox{\hyperlink{classplay_cards_1_1_card_af9fc70900615d436bb511728e78fc2db}{getSuit}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ suit;\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}\ \&\mbox{\hyperlink{classplay_cards_1_1_card_a2434fc936856a66a73cd1125d59f03cf}{setRank}}(\textcolor{keywordtype}{int}\ rank);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}\ \&\mbox{\hyperlink{classplay_cards_1_1_card_afde77cb7bf36577148694f73fc785af4}{setSuit}}(suits\ nSuit);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ [[nodiscard]]\ std::string\ \mbox{\hyperlink{classplay_cards_1_1_card_af805f908f8ecc29e463fe90738ff93a5}{formatString}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{comment}{//\ \ \ \ \ \ \ \ std::ostream\ \&print(std::ostream\ \&outStream)\ const;}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{classplay_cards_1_1_card_a23997dfb05faf22154c84ff78569be7c}{operator<<}}(std::ostream\ \&outStream,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}\ \&card);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\ \&\mbox{\hyperlink{classplay_cards_1_1_card_a8a9c1fcb74d64c5613dc92ccf196cb74}{operator>>}}(std::istream\ \&inStream,\ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}\ \&card);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{comment}{//\ \ \ \ \ \ \ \ std::ostream\ \&operator<<(std::ostream\ \&os)\ const;}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::strong\_ordering\ \mbox{\hyperlink{classplay_cards_1_1_card_ae9667b7ef1869bb0da1f1c22eb258ce9}{operator<=>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}\ \&secondCard)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classplay_cards_1_1_card_a2c0714c351bd7f2b552920c1b4569d74}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}\ \&rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classplay_cards_1_1_card}{Card}}\ \mbox{\hyperlink{classplay_cards_1_1_card_a64c58c89e145b03f6e782fa90f045515}{operator!}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \};}
+\DoxyCodeLine{00099\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

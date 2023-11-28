@@ -1,0 +1,274 @@
+        -:    0:Source:C:/Users/Alexander/CLionProjects/oop2/playCards/playCards.cpp
+        -:    0:Graph:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug\tests\CMakeFiles\testPlayDeckDynamic.dir\testPlayDeckDynamic.cpp.gcno
+        -:    0:Data:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug\tests\CMakeFiles\testPlayDeckDynamic.dir\testPlayDeckDynamic.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include <stdexcept>
+        -:    3:#include "playCards.h"
+        -:    4:
+        -:    5:namespace playCards {
+        -:    6:
+        -:    7:    static const std::string arrRank[] = {"2", "3", "4", "5", "6", "7",
+        -:    8:                                          "8", "9", "10", "J", "Q", "K", "A"};
+        -:    9:    static const std::string arrSuit[] = {"\u2666", "\u2665", "\u2663", "\u2660"};
+        -:   10:
+        -:   11:    // ♦         // ♥         // ♣         // ♠
+function _ZN9playCards4CardC2EiNS0_5suitsE called 9 returned 100% blocks executed 50%
+        9:   12:    Card::Card(int rank, suits suit) {
+       9*:   13:        if (rank < MINRANK || rank > MAXRANK) throw std::invalid_argument("Wrong rank");
+        9:   13-block  0
+branch  0 taken 9 (fallthrough)
+branch  1 taken 0
+        9:   13-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 9
+    %%%%%:   13-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   13-block  3
+call    8 never executed
+    $$$$$:   13-block  4
+call    9 never executed
+        9:   14:        this->rank = rank;
+        9:   15:        this->suit = suit;
+        9:   16:    }
+        9:   16-block  0
+        -:   17:
+        -:   18:
+function _ZN9playCards4CardC2Ev called 1468 returned 100% blocks executed 100%
+     1468:   19:    Card::Card() {
+     1468:   20:        rank = rand() % 13 + 2;
+     1468:   20-block  0
+call    0 returned 1468
+     1468:   21:        suit = Card::suits{rand() % 4};
+call    0 returned 1468
+     1468:   22:    }
+        -:   23:
+        -:   24:
+function _ZN9playCards4Card7setRankEi called 836 returned 100% blocks executed 56%
+      836:   25:    Card &Card::setRank(int nRank) {
+     836*:   26:        if (nRank < MINRANK || nRank > MAXRANK) throw std::invalid_argument("Wrong rank");
+      836:   26-block  0
+branch  0 taken 836 (fallthrough)
+branch  1 taken 0
+      836:   26-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 836
+    %%%%%:   26-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   26-block  3
+call    8 never executed
+    $$$$$:   26-block  4
+call    9 never executed
+      836:   27:        rank = nRank;
+      836:   28:        return *this;
+      836:   28-block  0
+      836:   28-block  1
+        -:   29:    }
+        -:   30:
+function _ZN9playCards4Card7setSuitENS0_5suitsE called 836 returned 100% blocks executed 100%
+      836:   31:    Card &Card::setSuit(suits nSuit) {
+      836:   32:        suit = nSuit;
+      836:   33:        return *this;
+      836:   33-block  0
+        -:   34:    }
+        -:   35:
+function _ZNK9playCards4Card12formatStringB5cxx11Ev called 2 returned 100% blocks executed 86%
+        2:   36:    std::string Card::formatString() const {
+        2:   37:        std::string result;
+        2:   37-block  0
+call    0 returned 2
+        2:   38:        result += playCards::arrRank[rank - MINRANK];
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   39:        result += playCards::arrSuit[(int) suit];
+        2:   39-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   40:        return result;}
+        2:   40-block  0
+        2:   40-block  1
+    $$$$$:   40-block  2
+call    0 never executed
+        -:   41:
+        -:   42://    std::ostream &Card::print(std::ostream &outStream) const {
+        -:   43://        return outStream << formatString() << " " << std::endl;
+        -:   44://    }
+        -:   45:
+function _ZNK9playCards4CardssERKS0_ called 0 returned 0% blocks executed 0%
+    #####:   46:    std::strong_ordering Card::operator<=>(const Card &secondCard) const {
+    #####:   47:        if (suit != secondCard.getSuit()) throw std::invalid_argument("Different suits!");
+    %%%%%:   47-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   47-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   47-block  2
+call    7 never executed
+    $$$$$:   47-block  3
+call    8 never executed
+    #####:   48:        return rank <=> secondCard.rank;
+    %%%%%:   48-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   48-block  1
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   48-block  2
+    %%%%%:   48-block  3
+    %%%%%:   48-block  4
+    %%%%%:   48-block  5
+        -:   49:    }
+        -:   50:
+function _ZNK9playCards4CardeqERKS0_ called 40 returned 100% blocks executed 75%
+       40:   51:    bool Card::operator==(const Card &secondCard) const {
+       40:   52:        if (suit == secondCard.suit) {
+       40:   52-block  0
+branch  0 taken 40 (fallthrough)
+branch  1 taken 0
+       40:   53:            return rank == secondCard.rank;
+       40:   53-block  0
+        -:   54:        }else{
+    #####:   55:            return false;
+    %%%%%:   55-block  0
+        -:   56:        }
+        -:   57:    }
+        -:   58:
+function _ZN9playCardslsERSoRKNS_4CardE called 0 returned 0% blocks executed 0%
+    #####:   59:    std::ostream &operator<<(std::ostream &outStream, const Card &card) {
+    #####:   60:        return outStream << card.formatString() << std::endl;
+    %%%%%:   60-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   60-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   60-block  2
+call    7 never executed
+    %%%%%:   60-block  3
+    $$$$$:   60-block  4
+call    8 never executed
+        -:   61:    }
+        -:   62:
+function _ZN9playCards13dialogueFunc1Ev called 2 returned 100% blocks executed 100%
+        2:   63:    void dialogueFunc1() {
+        2:   64:        std::cout << "Enter rank:" << std::endl;
+        2:   64-block  0
+call    0 returned 2
+call    1 returned 2
+        2:   65:    }
+        -:   66:
+function _ZN9playCards13dialogueFunc2Ev called 2 returned 100% blocks executed 100%
+        2:   67:    void dialogueFunc2() {
+        2:   68:        std::cout << "Enter suit:" << std::endl;
+        2:   68-block  0
+call    0 returned 2
+call    1 returned 2
+        2:   69:    }
+        -:   70:
+function _ZN9playCardsrsERSiRNS_4CardE called 2 returned 100% blocks executed 57%
+        2:   71:    std::istream &operator>>(std::istream &inStream, Card &card) {
+        -:   72:        int rank, intSuit;
+        -:   73:        Card::suits suit;
+        2:   74:        dialogueFunc2();
+        2:   74-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   75:        inStream >> intSuit;
+        2:   75-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+       2*:   76:        if (intSuit > 4 || intSuit < 1) throw std::invalid_argument("Wrong suit!");
+        2:   76-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   76-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 2
+    %%%%%:   76-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   76-block  3
+call    8 never executed
+    $$$$$:   76-block  4
+call    9 never executed
+        2:   77:        suit = Card::suits{intSuit - 1};
+        2:   78:        dialogueFunc1();
+        2:   78-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   79:        inStream >> rank;
+        2:   79-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+       2*:   80:        if (rank > Card::MAXRANK || rank < Card::MINRANK) throw std::invalid_argument("Wrong rank!");
+        2:   80-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   80-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 2
+    %%%%%:   80-block  2
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   80-block  3
+call    8 never executed
+    $$$$$:   80-block  4
+call    9 never executed
+        2:   81:        card.setSuit(suit);
+        2:   81-block  0
+call    0 returned 2
+        2:   82:        card.setRank(rank);
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   83:        return inStream;
+        2:   83-block  0
+        2:   83-block  1
+        -:   84:    }
+        -:   85:
+function _ZNK9playCards4CardntEv called 0 returned 0% blocks executed 0%
+    #####:   86:    Card Card::operator!() const {
+    #####:   87:        Card newCard;
+    %%%%%:   87-block  0
+call    0 never executed
+    #####:   88:        newCard.setSuit(Card::suits{MINRANK + 1 - (int)this->suit});
+call    0 never executed
+    #####:   89:        newCard.setRank(MAXRANK + 2 - this->getRank());
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:   90:        return newCard;
+    %%%%%:   90-block  0
+    %%%%%:   90-block  1
+        -:   91:    }
+        -:   92:
+        -:   93:
+        -:   94://    std::ostream &Card::operator<<(std::ostream &os) const{
+        -:   95://        return os << formatString() << std::endl;
+        -:   96://    }
+        -:   97:
+        -:   98:}

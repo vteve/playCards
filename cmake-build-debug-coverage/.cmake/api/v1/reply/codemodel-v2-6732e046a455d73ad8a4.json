@@ -1,0 +1,181 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "playCards",
+					"jsonFile" : "directory-playCards-Debug-cba8ab0a1d51a30b12f9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "playCards",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-70e4927a02b591d5c1f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "playDeckStatic",
+					"jsonFile" : "directory-playDeckStatic-Debug-39ac3fa9fed356c7e9ed.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "playDeckStatic",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "playDeckDynamic",
+					"jsonFile" : "directory-playDeckDynamic-Debug-224d4df371a5b5c98124.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "playDeckDynamic",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "oop2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "oop2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-oop2-Debug-940e8b9a402b143b097b.json",
+					"name" : "oop2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playCards::@d4c96715721706d4521e",
+					"jsonFile" : "target-playCards-Debug-f0600d44b8e467e0a29b.json",
+					"name" : "playCards",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "playDeckDynamic::@7866e2705fe5f26a94ec",
+					"jsonFile" : "target-playDeckDynamic-Debug-2401f06d63aa4e0a401b.json",
+					"name" : "playDeckDynamic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "playDeckStatic::@33579472e2c5e2a6c3f6",
+					"jsonFile" : "target-playDeckStatic-Debug-862268d1c25d4045c584.json",
+					"name" : "playDeckStatic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "testPlayCards::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-testPlayCards-Debug-9c5abf9471466c098a0c.json",
+					"name" : "testPlayCards",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "testPlayDeckDynamic::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-testPlayDeckDynamic-Debug-4055fbd77fa702ddb484.json",
+					"name" : "testPlayDeckDynamic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "testPlayDeckStatic::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-testPlayDeckStatic-Debug-036ecb3ce44f008848e8.json",
+					"name" : "testPlayDeckStatic",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Alexander/CLionProjects/oop2/cmake-build-debug-coverage",
+		"source" : "C:/Users/Alexander/CLionProjects/oop2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

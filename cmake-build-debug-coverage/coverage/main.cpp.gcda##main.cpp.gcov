@@ -1,0 +1,476 @@
+        -:    0:Source:C:/Users/Alexander/CLionProjects/oop2/main.cpp
+        -:    0:Graph:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug-coverage\CMakeFiles\oop2.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug-coverage\CMakeFiles\oop2.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include "playCards/playCards.h"
+        -:    3://#include "playDeckStatic/deck.h"
+        -:    4:#include "playDeckDynamic/deck.h"
+        -:    5:
+        -:    6:
+function main called 1 returned 100% blocks executed 68%
+        1:    7:int main() {
+        1:    8:    system("chcp 65001");
+        1:    8-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    9:    srand(time(0));
+        1:    9-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    9-block  1
+call    3 returned 1
+        -:   10://    playCards::Card card1(11, 2);
+        -:   11://    playCards::Card card2(14, 2);
+        -:   12://    playCards::Card card3;
+        -:   13:////    card1.print(std::cout);
+        -:   14:////    card2.print(std::cout);
+        -:   15:////    card3.print(std::cout);
+        -:   16://    std::cout << card1;
+        -:   17://    std::cout << card2;
+        -:   18://    std::cout << card3;
+        -:   19:////    card1.operator<<(std::cout);
+        -:   20://    std::cout << (card1 == card2) << std::endl;
+        -:   21://    std::cout << (card1 > card2) << std::endl;
+        -:   22://    std::cout << (card1 < card2) << std::endl;
+        -:   23://    std::cout << (card1 >= card2) << std::endl;
+        -:   24://    std::cout << (card1 <= card2) << std::endl;
+        -:   25://    std::cout << (card1 != card2) << std::endl;
+        -:   26://    card1.setSuit(3);
+        -:   27://    int rankCard2 = card2.getRank();
+        -:   28://    card2.setRank(2);
+        -:   29://    int suitCard3 = card3.getSuit();
+        -:   30://    playCards::Card card;
+        -:   31://    std::cin >> card;
+        -:   32://    std::cout << card;
+        -:   33://    playDeckStatic::Deck deck1(20);
+        -:   34://    playCards::Card *cards1 = deck1.getDeck();
+        -:   35://    for (int i = 0; i < deck1.getCountCards(); ++i) {
+        -:   36://        std::cout << i << " " << cards1[i];
+        -:   37://    }
+        -:   38://    std::cout << "=====================================" << std::endl;
+        -:   39://    playDeckStatic::Deck deck2(25);
+        -:   40://    playCards::Card *cards2 = deck2.getDeck();
+        -:   41://    for (int i = 0; i < deck2.getCountCards(); ++i) {
+        -:   42://        std::cout << i << " " << cards2[i];
+        -:   43://    }
+        -:   44://    deck1>>deck2;
+        -:   45://    std::cout << "==================--------===================" << std::endl;
+        -:   46://    playCards::Card *cards3 = deck1.getDeck();
+        -:   47://    for (int i = 0; i < deck1.getCountCards(); ++i) {
+        -:   48://        std::cout << i << " " << cards3[i];
+        -:   49://    }
+        -:   50://    std::cout << "=====================================" << std::endl;
+        -:   51://    playCards::Card *cards4 = deck2.getDeck();
+        -:   52://    deck2.addRandomCard();
+        -:   53://    deck2.deleteCard(1);
+        -:   54://    for (int i = 0; i < deck2.getCountCards(); ++i) {
+        -:   55://        std::cout << i << " " << cards4[i];
+        -:   56://    }
+        -:   57://    std::cout << "=====================================" << std::endl;
+        -:   58://    deck2.arrangingDeck();
+        -:   59://    playCards::Card *cards5 = deck2.getDeck();
+        -:   60://    for (int i = 0; i < deck2.getCountCards(); ++i) {
+        -:   61://        std::cout << i << " " << cards5[i];
+        -:   62://    }
+        -:   63://    std::cout << "=====================================" << std::endl;
+        -:   64://    deck2.mixingDeck();
+        -:   65://    playCards::Card *cards6 = deck2.getDeck();
+        -:   66://    for (int i = 0; i < deck2.getCountCards(); ++i) {
+        -:   67://        std::cout << i << " " << cards6[i];
+        -:   68://    }
+        -:   69://    std::cout << "=====================================" << std::endl;
+        -:   70://    playDeckStatic::Deck newDeck = deck2.newDeckBySuit(3);
+        -:   71://    playCards::Card *cards7 = newDeck.getDeck();
+        -:   72://    for (int i = 0; i < newDeck.getCountCards(); ++i) {
+        -:   73://        std::cout << i << " " << cards7[i];
+        -:   74://    }
+        -:   75://    std::cout << "=====================================" << std::endl;
+        -:   76://    playDeckStatic::Deck newDeck2 = deck1 + deck2;
+        -:   77://    playCards::Card *cards8 = newDeck2.getDeck();
+        -:   78://    for (int i = 0; i < newDeck2.getCountCards(); ++i) {
+        -:   79://        std::cout << i << " " << cards8[i];
+        -:   80://    }
+        -:   81://    std::cout << newDeck2[3] << std::endl;
+        -:   82://    std::cout << "=====================================" << std::endl;
+        -:   83://    std::cout << newDeck2;
+        -:   84://    playDeckStatic::Deck newDeck3(10);
+        -:   85://    std::cin >> newDeck3;
+        -:   86://    std::cout << newDeck3;
+        -:   87://    std::cout << newDeck3[4] << std::endl;
+        -:   88://    playDeckStatic::Deck deck101;
+        -:   89://    std::cout << deck101;
+        -:   90://    playDeckStatic::Deck deck102(25);
+        -:   91://    std::cout << deck102;
+        -:   92://    deck101 = deck102;
+        -:   93://    std::cout << deck101;
+        -:   94://    playDeckStatic::Deck deck103;
+        -:   95://    ++deck103;
+        -:   96://    deck103++;
+        -:   97://    std::cout << deck103;
+        -:   98://    playDeckStatic::Deck deck104(20);
+        -:   99://    std::cout << deck104;
+        -:  100://    deck103 += deck104;
+        -:  101://    std::cout << deck103;
+        -:  102://    playCards::Card card100;
+        -:  103://    std::cout << card100;
+        -:  104://    !card100;
+        -:  105://    std::cout << card100;
+        1:  106:    playDeckDynamic::Deck deck;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  107:    std::cout << deck;
+        1:  107-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  108:    deck.addRandomCard();
+        1:  108-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  109:    std::cout << deck;
+        1:  109-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  110:    deck.deleteCard(20);
+        1:  110-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  111:    std::cout << deck;
+        1:  111-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  112:    playDeckDynamic::Deck deck200(52);
+        1:  112-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  113:    std::cout << deck200;
+        1:  113-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  114:    deck200.arrangingDeck();
+        1:  114-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  115:    std::cout << deck200;
+        1:  115-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  116:    playDeckDynamic::Deck deck201;
+        1:  116-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  117:    playDeckDynamic::Deck deck202 = deck201.newDeckBySuit(2);
+        1:  117-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  118:    std::cout << deck202;
+        1:  118-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  119:    deck202.mixingDeck();
+        1:  119-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  120:    std::cout << deck202;
+        1:  120-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  121://    playDeckDynamic::Deck deck203;
+        -:  122://    std::cin >> deck203;
+        -:  123://    std::cout << deck203;
+        1:  124:    playDeckDynamic::Deck deck204(20);
+        1:  124-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  125:    playDeckDynamic::Deck deck205;
+        1:  125-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  126:    std::cout << deck204;
+        1:  126-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  127:    std::cout << deck205;
+        1:  127-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  128:    deck204 >> deck205;
+        1:  128-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  129:    std::cout << deck204;
+        1:  129-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  130:    std::cout << deck205;
+        1:  130-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  131:    playDeckDynamic::Deck deck206(20);
+        1:  131-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  132:    playDeckDynamic::Deck deck207(15);
+        1:  132-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  133:    playDeckDynamic::Deck deck208 = deck206 + deck207;
+        1:  133-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  134:    std::cout << deck206;
+        1:  134-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  135:    std::cout << deck207;
+        1:  135-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  136:    std::cout << deck208;
+        1:  136-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  137:    playDeckDynamic::Deck deck209(25);
+        1:  137-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  138:    playDeckDynamic::Deck deck210 = deck209;
+        1:  138-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  139:    std::cout << deck209;
+        1:  139-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  140:    std::cout << deck210;
+        1:  140-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  141:    playDeckDynamic::Deck deck211(30);
+        1:  141-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  142:    std::cout << deck211;
+        1:  142-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  143:    deck211++;
+        1:  143-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  143-block  1
+call    3 returned 1
+        1:  144:    ++deck211;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  145:    std::cout << deck211;
+        1:  145-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  146:    playDeckDynamic::Deck deck212(15);
+        1:  146-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  147:    std::cout << deck212;
+        1:  147-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  148:    playDeckDynamic::Deck deck213(10);
+        1:  148-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  149:    deck212 += deck213;
+        1:  149-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  149-block  1
+call    3 returned 1
+        1:  150:    std::cout << deck213;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  151:    std::cout << deck212;
+        1:  151-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  152:    playDeckDynamic::Deck deck214(51);
+        1:  152-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  153:    std::cout << deck214;
+        1:  153-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  154:    playDeckDynamic::Deck deck215(20);
+        1:  154-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  155:    playDeckDynamic::Deck deck216{deck215};
+        1:  155-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  156:    std::cout << deck215;
+        1:  156-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  157:    std::cout << deck216;
+        1:  157-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  158:    playDeckDynamic::Deck deck217(15);
+        1:  158-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  159:    playDeckDynamic::Deck deck218 = std::move(deck217);
+        1:  159-block  0
+call    0 returned 1
+call    1 returned 1
+        1:  160:    std::cout << deck217;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  161:    std::cout << deck218;
+        1:  161-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  162:    playDeckDynamic::Deck deck219(25);
+        1:  162-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  163:    playDeckDynamic::Deck deck220;
+        1:  163-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  164:    deck220 = std::move(deck219);
+        1:  164-block  0
+call    0 returned 1
+call    1 returned 1
+        1:  165:    std::cout << deck219;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  166:    std::cout << deck220;
+        1:  166-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  167:}
+        1:  167-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+call    7 returned 1
+call    8 returned 1
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+        1:  167-block  1
+    $$$$$:  167-block  2
+call   21 never executed
+    $$$$$:  167-block  3
+call   22 never executed
+    $$$$$:  167-block  4
+call   23 never executed
+    $$$$$:  167-block  5
+call   24 never executed
+    $$$$$:  167-block  6
+call   25 never executed
+    $$$$$:  167-block  7
+call   26 never executed
+    $$$$$:  167-block  8
+call   27 never executed
+    $$$$$:  167-block  9
+call   28 never executed
+    $$$$$:  167-block 10
+call   29 never executed
+    $$$$$:  167-block 11
+call   30 never executed
+    $$$$$:  167-block 12
+call   31 never executed
+    $$$$$:  167-block 13
+call   32 never executed
+    $$$$$:  167-block 14
+call   33 never executed
+    $$$$$:  167-block 15
+call   34 never executed
+    $$$$$:  167-block 16
+call   35 never executed
+    $$$$$:  167-block 17
+call   36 never executed
+    $$$$$:  167-block 18
+call   37 never executed
+    $$$$$:  167-block 19
+call   38 never executed
+    $$$$$:  167-block 20
+call   39 never executed
+    $$$$$:  167-block 21
+call   40 never executed
+    $$$$$:  167-block 22
+call   41 never executed

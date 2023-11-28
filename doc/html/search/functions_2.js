@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['deck_0',['deck',['../classplay_deck_dynamic_1_1_deck.html#a174c301e0fa8cad96541cceb1bd9394a',1,'playDeckDynamic::Deck::Deck(int count)'],['../classplay_deck_dynamic_1_1_deck.html#ae9f8217f0d4275b312017f80252ae6af',1,'playDeckDynamic::Deck::Deck()'],['../classplay_deck_dynamic_1_1_deck.html#a0d03aedb898b0bfcd09f6f4ad66448ec',1,'playDeckDynamic::Deck::Deck(const Deck &amp;secondDeck)'],['../classplay_deck_dynamic_1_1_deck.html#a0144b39a368bce8ed9a18253a2f392e8',1,'playDeckDynamic::Deck::Deck(Deck &amp;&amp;secondDeck) noexcept'],['../classplay_deck_static_1_1_deck.html#aeb5b221fddd16ae19b238b51465a9e46',1,'playDeckStatic::Deck::Deck(int count)'],['../classplay_deck_static_1_1_deck.html#a257ab13477ac7d57526592904de1a270',1,'playDeckStatic::Deck::Deck()']]],
+  ['deletecard_1',['deletecard',['../classplay_deck_dynamic_1_1_deck.html#a2d016c27eee20b42d293cc86827d9da6',1,'playDeckDynamic::Deck::deleteCard()'],['../classplay_deck_static_1_1_deck.html#abca486b34b3941360dd73c6e3f839985',1,'playDeckStatic::Deck::deleteCard()']]]
+];

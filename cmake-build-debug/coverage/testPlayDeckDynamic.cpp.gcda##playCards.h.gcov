@@ -1,0 +1,109 @@
+        -:    0:Source:C:/Users/Alexander/CLionProjects/oop2/playCards/playCards.h
+        -:    0:Graph:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug\tests\CMakeFiles\testPlayDeckDynamic.dir\testPlayDeckDynamic.cpp.gcno
+        -:    0:Data:C:\Users\Alexander\CLionProjects\oop2\cmake-build-debug\tests\CMakeFiles\testPlayDeckDynamic.dir\testPlayDeckDynamic.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:
+        -:    3:#ifndef PLAYCARDS_H
+        -:    4:#define PLAYCARDS_H
+        -:    5:
+        -:    6:namespace playCards {
+        -:    7:    class Card {
+        -:    8:    public:
+        -:    9:        enum class suits {
+        -:   10:            diamonds, hears, clubs, spades
+        -:   11:        };
+        -:   12:    private:
+        -:   13:        int rank;
+        -:   14:        suits suit;
+        -:   15:        static const int MINRANK = 2, MAXRANK = 14;
+        -:   16:        static const std::string arrRank[];
+        -:   17:        static const std::string arrSuit[];
+        -:   18:    public:
+        -:   19:
+        -:   20:        Card(int rank, suits suit1);
+        -:   21:
+        -:   22:        explicit Card();
+        -:   23:
+        -:   24:        /*!
+        -:   25:         *
+        -:   26:         * @returns rank of this card
+        -:   27:         */
+function _ZNK9playCards4Card7getRankEv called 2757 returned 100% blocks executed 100%
+     2757:   28:        [[nodiscard]] int getRank() const { return rank; }
+     2757:   28-block  0
+        -:   29:
+        -:   30:        /*!
+        -:   31:         *
+        -:   32:         * @returns suit of this card
+        -:   33:         */
+function _ZNK9playCards4Card7getSuitEv called 10098 returned 100% blocks executed 100%
+    10098:   34:        [[nodiscard]] suits getSuit() const { return suit; }
+    10098:   34-block  0
+        -:   35:
+        -:   36:        /*!
+        -:   37:         *
+        -:   38:         * @param rank set rank to field of object
+        -:   39:         * @returns link to object to do chain calls
+        -:   40:         * @throws std::invalid_argument if rank is wrong
+        -:   41:         */
+        -:   42:        Card &setRank(int rank);
+        -:   43:        /*!
+        -:   44:         *
+        -:   45:         * @param nSuit set suit to field of object
+        -:   46:         * @returns link to object to do chain calls
+        -:   47:         */
+        -:   48:        Card &setSuit(suits nSuit);
+        -:   49:
+        -:   50:        /*!
+        -:   51:         *
+        -:   52:         * @returns card as a beautiful string
+        -:   53:         */
+        -:   54:        [[nodiscard]] std::string formatString() const;
+        -:   55:
+        -:   56://        std::ostream &print(std::ostream &outStream) const;
+        -:   57:
+        -:   58:        /*!
+        -:   59:         *
+        -:   60:         * @param outStream output values are written here
+        -:   61:         * @param card object which we want to output
+        -:   62:         * @returns outStream - output stream
+        -:   63:         */
+        -:   64:        friend std::ostream &operator<<(std::ostream &outStream, const Card &card);
+        -:   65:        /*!
+        -:   66:         *
+        -:   67:         * @param inStream input values are written here
+        -:   68:         * @param card object which we want to input
+        -:   69:         * @returns inStream - input stream
+        -:   70:         * @throws std::invalid_argument if suit is wrong
+        -:   71:         */
+        -:   72:        friend std::istream &operator>>(std::istream &inStream, Card &card);
+        -:   73:
+        -:   74://        std::ostream &operator<<(std::ostream &os) const;
+        -:   75:
+        -:   76:        /*!
+        -:   77:         *
+        -:   78:         * @param secondCard second argument for comparison operation
+        -:   79:         * @returns result of comparison operation (0 - false, 1 - true)
+        -:   80:         * @throws std::invalid_argument if suits are different
+        -:   81:         */
+        -:   82:        std::strong_ordering operator<=>(const Card &secondCard) const;
+        -:   83:
+        -:   84:        /*!
+        -:   85:         *
+        -:   86:         * @param rhs second argument for comparison operation ==
+        -:   87:         * @returns result of comparison operation (0 - false, 1 - true)
+        -:   88:         */
+        -:   89:        bool operator==(const Card &rhs) const;
+        -:   90:
+        -:   91:        /*!
+        -:   92:         *
+        -:   93:         * @returns diametrically opposite card
+        -:   94:         * for suit 1 is 4, for suit 2 is 3, for rank is (16 - rank)
+        -:   95:         */
+        -:   96:        Card operator!() const;
+        -:   97:
+        -:   98:    };
+        -:   99:}
+        -:  100:
+        -:  101:#endif
