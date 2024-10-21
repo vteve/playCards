@@ -37,7 +37,8 @@ namespace playCards {
         std::string result;
         result += playCards::arrRank[rank - MINRANK];
         result += playCards::arrSuit[(int) suit];
-        return result;}
+        return result;
+    }
 
 //    std::ostream &Card::print(std::ostream &outStream) const {
 //        return outStream << formatString() << " " << std::endl;
@@ -51,7 +52,7 @@ namespace playCards {
     bool Card::operator==(const Card &secondCard) const {
         if (suit == secondCard.suit) {
             return rank == secondCard.rank;
-        }else{
+        } else {
             return false;
         }
     }
@@ -85,7 +86,7 @@ namespace playCards {
 
     Card Card::operator!() const {
         Card newCard;
-        newCard.setSuit(Card::suits{MINRANK + 1 - (int)this->suit});
+        newCard.setSuit(Card::suits{MINRANK + 1 - (int) this->suit});
         newCard.setRank(MAXRANK + 2 - this->getRank());
         return newCard;
     }
